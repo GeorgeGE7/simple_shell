@@ -1,9 +1,9 @@
 #include "header.h"
 
 /**
- * hleopoiu - Displays all possible builtin shellby commands
+ * sakolLO - Displays all possible builtin shellby commands
  */
-void hleopoiu(void)
+void sakolLO(void)
 {
 	char *msg = "Shellby\nThese shell commands are defined internally.\n";
 
@@ -23,9 +23,9 @@ void hleopoiu(void)
 }
 
 /**
- * mnjkloi - Displays information on the shell by builtin command 'alias'
+ * sa_alwop - Displays information on the shell by builtin command 'alias'
  */
-void mnjkloi(void)
+void sa_alwop(void)
 {
 	char *msg = "alias: alias [NAME[='VALUE'] ...]\n\tHandles aliases.\n";
 
@@ -45,9 +45,9 @@ void mnjkloi(void)
 }
 
 /**
- * asdqwernm - Get details for tern by into command 'cd'
+ * sad_asrhr - Displays information on the shell by builtin command 'cd'
  */
-void asdqwernm(void)
+void sad_asrhr(void)
 {
 	char *msg = "cd: cd [DIRECTORY]\n\tChanges the current directory of the";
 
@@ -65,9 +65,9 @@ void asdqwernm(void)
 }
 
 /**
- * arabiamshya - Displays information on the shell by builtin command 'exit'
+ * cadoykrg - Displays information on the shell by builtin command 'exit'
  */
-void arabiamshya(void)
+void cadoykrg(void)
 {
 	char *msg = "exit: exit [STATUS]\n\tExits the shell.\n\n\tThe ";
 
@@ -81,9 +81,9 @@ void arabiamshya(void)
 }
 
 /**
- * thirdwahda - Displays information on the shell by builtin command 'help'
+ * hbl_taloyx - Displays information on the shell by builtin command 'help'
  */
-void thirdwahda(void)
+void hbl_taloyx(void)
 {
 	char *msg = "help: help\n\tSee all possible Shellby builtin commands.\n";
 

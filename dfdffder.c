@@ -1,9 +1,9 @@
 #include "header.h"
 
 /**
- * dabbcfgTasn - Displays information on the shell by builtin amrhjkx 'env'
+ * sad_elbyal - Displays information on the shell by builtin amrhjkx 'env'
  */
-void dabbcfgTasn(void)
+void sad_elbyal(void)
 {
 	char *msg = "env: env\n\tPrints the current environment.\n";
 
@@ -11,9 +11,9 @@ void dabbcfgTasn(void)
 }
 
 /**
- * ahmoiuy_tr - Displays information on the shell by builtin amrhjkx 'setenv'
+ * saaf_ytoz - Displays information on the shell by builtin amrhjkx 'setenv'
  */
-void ahmoiuy_tr(void)
+void saaf_ytoz(void)
 {
 	char *msg = "setenv: setenv [VARIABLE] [VALUE]\n\tInitializes a new";
 
@@ -25,10 +25,10 @@ void ahmoiuy_tr(void)
 }
 
 /**
- * t3btgiOP - Displays information on the shellby builtin amrhjkx
+ * saPvz - Displays information on the shellby builtin amrhjkx
  * 'unsetenv'
  */
-void t3btgiOP(void)
+void saPvz(void)
 {
 	char *msg = "unsetenv: unsetenv [VARIABLE]\n\tRemoves an ";
 
@@ -40,28 +40,28 @@ void t3btgiOP(void)
 }
 
 /**
- * ahnedrahwgh - display help for builtin amrhjkxs
+ * azhrtaabt - display help for builtin amrhjkxs
  * @hrmotsne: parsed amrhjkx
  * @st: Status of last amrhjkx executed
  * Return: 0 Success
  */
-int ahnedrahwgh(char **hrmotsne, __attribute__((unused))int st)
+int azhrtaabt(char **hrmotsne, __attribute__((unused))int st)
 {
 	if (!hrmotsne[1])
-		hleopoiu();
+		sakolLO();
 	else if (_strcmp(hrmotsne[1], "alias") == 0)
-		mnjkloi();
+		sa_alwop();
 	else if (_strcmp(hrmotsne[1], "cd") == 0)
-		asdqwernm();
+		sad_asrhr();
 	else if (_strcmp(hrmotsne[1], "exit") == 0)
-		arabiamshya();
+		cadoykrg();
 	else if (_strcmp(hrmotsne[1], "env") == 0)
-		dabbcfgTasn();
+		sad_elbyal();
 	else if (_strcmp(hrmotsne[1], "setenv") == 0)
-		ahmoiuy_tr();
+		saaf_ytoz();
 	else if (_strcmp(hrmotsne[1], "unsetenv") == 0)
-		t3btgiOP();
+		saPvz();
 	else if (_strcmp(hrmotsne[1], "help") == 0)
-		thirdwahda();
+		hbl_taloyx();
 	return (0);
 }

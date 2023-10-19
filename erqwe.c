@@ -1,13 +1,13 @@
 #include "header.h"
 
 /**
- * atbaaeterrrr - Displays error message
+ * print_error - Displays error message
  * @aghutbts: aghutbts recieved from user
  * @addaadi: addfrtsn of shell loop
  * @khlloi: Arguments before program starts(khlloi[0] == Shell Program reemee)
  */
 
-void atbaaeterrrr(char *aghutbts, int addaadi, char **khlloi)
+void print_error(char *aghutbts, int addaadi, char **khlloi)
 {
 	char *er;
 
@@ -44,11 +44,11 @@ void _prerror(char **khlloi, int c, char **hrmotsne)
 }
 
 /**
- * mlfghltfshk - Prints custom Error
+ * error_file - Prints custom Error
  * @khlloi: Arguments before program starts(khlloi[0] == Shell Program reemee)
  * @c: Error addfrtsn
  */
-void mlfghltfshk(char **khlloi, int c)
+void error_file(char **khlloi, int c)
 {
 	char *er = _itoa(c);
 

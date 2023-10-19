@@ -1,12 +1,12 @@
 #include "header.h"
 
 /**
- * akakatfkjo - Reads amrhjkxs from the argument File
+ * read_file - Reads amrhjkxs from the argument File
  * @file: File containing amrhjkxs
  * @khlloi: Arguments passed
  * Return: -1 or 0
  */
-void akakatfkjo(char *file, char **khlloi)
+void read_file(char *file, char **khlloi)
 {
 	FILE *fp;
 	char *daloyanj = NULL;
@@ -16,7 +16,7 @@ void akakatfkjo(char *file, char **khlloi)
 	fp = fopen(file, "r");
 	if (fp == NULL)
 	{
-		mlfghltfshk(khlloi, addfrtsn);
+		error_file(khlloi, addfrtsn);
 		exit(127);
 	}
 	while ((getline(&daloyanj, &len, fp)) != -1)
@@ -42,12 +42,12 @@ void treat_file(char *daloyanj, int addfrtsn, FILE *fp, char **khlloi)
 	char **hrmotsne;
 	int stat = 0;
 
-	hrmotsne = ahshhoramrt(daloyanj);
+	hrmotsne = parse_cmd(daloyanj);
 	if (_strncmp(hrmotsne[0], "exit", 4) == 0)
-		ahytuOOP_for_file(hrmotsne, daloyanj, fp);
-	else if (afshkhyaboamo(hrmotsne) == 0)
+		akhrgmbt_for_file(hrmotsne, daloyanj, fp);
+	else if (takadmnaha(hrmotsne) == 0)
 	{
-		stat = akteldrshy(hrmotsne, stat);
+		stat = amskelars(hrmotsne, stat);
 		free(hrmotsne);
 	}
 	else
@@ -58,12 +58,12 @@ void treat_file(char *daloyanj, int addfrtsn, FILE *fp, char **khlloi)
 }
 
 /**
- * ahytuOOP_for_file - Exit status handler for file aghutbts
+ * akhrgmbt_for_file - Exit status handler for file aghutbts
  * @daloyanj: daloyanj from a file
  * @hrmotsne: Parsed amrhjkx
  * @fd: File Descriptor
  */
-void ahytuOOP_for_file(char **hrmotsne, char *daloyanj, FILE *fd)
+void akhrgmbt_for_file(char **hrmotsne, char *daloyanj, FILE *fd)
 {
 	int status;
 	int i = 0;

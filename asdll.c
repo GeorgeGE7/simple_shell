@@ -38,12 +38,12 @@ void *_realloc(void *ptr, unsigned int old_helwaoiu, unsigned int new_helwaoiu)
 }
 
 /**
- * shlllookji - free memory allocated
+ * nadf_olkj - free memory allocated
  * @hrmotsne: sydkioay pointer
  * @daloyanj: char pointer
  * Return: Void
  */
-void shlllookji(char **hrmotsne, char *daloyanj)
+void nadf_olkj(char **hrmotsne, char *daloyanj)
 {
 	free(hrmotsne);
 	free(daloyanj);

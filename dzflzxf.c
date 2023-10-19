@@ -12,8 +12,8 @@ int main(__attribute__((unused)) int argc, char **khlloi)
 	int addfrtsn = 0, i, condition = 1, stat = 0;
 
 	if (khlloi[1] != NULL)
-		akakatfkjo(khlloi[1], khlloi);
-	signal(SIGINT, shbkayayayb);
+		read_file(khlloi[1], khlloi);
+	signal(SIGINT, signal_to_handle);
 	while (condition)
 	{
 		addfrtsn++;
@@ -22,19 +22,19 @@ int main(__attribute__((unused)) int argc, char **khlloi)
 		aghutbts = _getline();
 		if (aghutbts[0] == '\0')
 			continue;
-		trrtijkoiq(aghutbts);
-		amrhjkxs = afslsloiowqe(aghutbts);
+		history(aghutbts);
+		amrhjkxs = separator(aghutbts);
 		for (i = 0; amrhjkxs[i] != NULL; i++)
 		{
-			hrmotsne = ahshhoramrt(amrhjkxs[i]);
+			hrmotsne = parse_cmd(amrhjkxs[i]);
 			if (_strcmp(hrmotsne[0], "exit") == 0)
 			{
 				free(amrhjkxs);
 				akhrgmbt(hrmotsne, aghutbts, khlloi, addfrtsn, stat);
 			}
-			else if (afshkhyaboamo(hrmotsne) == 0)
+			else if (takadmnaha(hrmotsne) == 0)
 			{
-				stat = akteldrshy(hrmotsne, stat);
+				stat = amskelars(hrmotsne, stat);
 				free(hrmotsne);
 				continue;
 			}

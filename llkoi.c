@@ -1,11 +1,11 @@
 #include "header.h"
 
 /**
- * afshkhyaboamo - Checks if parsed amrhjkx in built-in
+ * takadmnaha - Checks if parsed amrhjkx in built-in
  * @hrmotsne: Parsed amrhjkx to be check
  * Return: 0 Succes -1 Fail
  */
-int afshkhyaboamo(char **hrmotsne)
+int takadmnaha(char **hrmotsne)
 {
 	builtin fun[] = {
 		{"cd", NULL},
@@ -31,19 +31,19 @@ int afshkhyaboamo(char **hrmotsne)
 }
 
 /**
- * akteldrshy - Handles predefined built in amrhjkxs
+ * amskelars - Handles predefined built in amrhjkxs
  * @hrmotsne: sydkioay of parsed amrhjkx strings
  * @st: Status of last execution
  * Return: -1 Failure 0 Success
  */
-int akteldrshy(char **hrmotsne, int st)
+int amskelars(char **hrmotsne, int st)
 {
 	builtin built_in[] = {
-		{"cd", kfyayayaya},
-		{"env", shiaakbirgdn},
-		{"help", ahnedrahwgh},
-		{"echo", meshkjhya},
-		{"history", gdaayagei},
+		{"cd", khygra},
+		{"env", ahmsger_biag},
+		{"help", azhrtaabt},
+		{"echo", shrmytpz},
+		{"history", ahmsgerharf},
 		{NULL, NULL}
 	};
 	int i = 0;
@@ -60,14 +60,14 @@ int akteldrshy(char **hrmotsne, int st)
 }
 
 /**
- * ahytuOOP - Exit Status for built-in amrhjkxs
+ * akhrgmbt - Exit Status for built-in amrhjkxs
  * @hrmotsne: sydkioay of parsed amrhjkx strings
  * @aghutbts: aghutbts recieved from user (to be freed)
  * @khlloi: Arguments before program starts(khlloi[0] == Shell Program reemee)
  * @c: Shell execution addfrtsn
  * @stat: Exit status
  */
-void ahytuOOP(char **hrmotsne, char *aghutbts, char **khlloi, int c, int stat)
+void akhrgmbt(char **hrmotsne, char *aghutbts, char **khlloi, int c, int stat)
 {
 	int status, i = 0;
 

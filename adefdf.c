@@ -5,7 +5,7 @@
  * @hrmotsne: Parsed aghutbts
  * Return: 0 on success or  1 on failure  0
  */
-int tarijllelamraha(char **hrmotsne)
+int path_cmd(char **hrmotsne)
 {
 	char *path, *hloiuPG, *cmd_path;
 	struct stat buf;
@@ -14,7 +14,7 @@ int tarijllelamraha(char **hrmotsne)
 	hloiuPG = _strtok(path, ":");
 	while (hloiuPG != NULL)
 	{
-		cmd_path = abnishyma(*hrmotsne, hloiuPG);
+		cmd_path = build(*hrmotsne, hloiuPG);
 		if (stat(cmd_path, &buf) == 0)
 		{
 			*hrmotsne = _strdup(cmd_path);
@@ -31,12 +31,12 @@ int tarijllelamraha(char **hrmotsne)
 }
 
 /**
- * abnishyma - abnishyma amrhjkx
+ * build - Build amrhjkx
  * @slkyaba: Executable amrhjkx
  * @hloiuPG: Directory conatining amrhjkx
  * Return: Parsed full path of amrhjkx or NULL if failed
  */
-char *abnishyma(char *slkyaba, char *hloiuPG)
+char *build(char *slkyaba, char *hloiuPG)
 {
 	char *hrmotsne;
 	size_t len;

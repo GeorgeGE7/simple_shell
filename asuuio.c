@@ -1,11 +1,11 @@
 #include "header.h"
 
 /**
- * ahshhoramrt - Parses the amrhjkx recieved from stdin
+ * parse_cmd - Parses the amrhjkx recieved from stdin
  * @aghutbts: String gathered from stdin
  * Return: Parsed strings to be used as arguments
  */
-char **ahshhoramrt(char *aghutbts)
+char **parse_cmd(char *aghutbts)
 {
 	char **arguments;
 	char *argument;

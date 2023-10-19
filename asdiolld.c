@@ -1,24 +1,24 @@
 #include "header.h"
 
 /**
- * afshjybgtyp - Prints unsigned integers using _putchar function
+ * atrtRkmj - Prints unsigned integers using _putchar function
  * @n: Unsigned integer to be printed
  */
-void afshjybgtyp(unsigned int n)
+void atrtRkmj(unsigned int n)
 {
 	unsigned int x = n;
 
 	if ((x / 10) > 0)
-		afshjybgtyp(x / 10);
+		atrtRkmj(x / 10);
 
 	_putchar(x % 10 + '0');
 }
 
 /**
- * ahahattyrq - Prints integers using _putchar function
+ * atba_rkmSahy - Prints integers using _putchar function
  * @n: Integer to be printed
  */
-void ahahattyrq(int n)
+void atba_rkmSahy(int n)
 {
 	unsigned int x = n;
 
@@ -28,17 +28,17 @@ void ahahattyrq(int n)
 		x = -x;
 	}
 	if ((x / 10) > 0)
-		afshjybgtyp(x / 10);
+		atrtRkmj(x / 10);
 
 	_putchar(x % 10 + '0');
 }
 
 /**
- * niiiiytko - Executes built-in echo function
+ * at_lkov - Executes built-in echo function
  * @hrmotsne: Parsed amrhjkx
  * Return: 0 Upon Success -1 Upon Failure
  */
-int niiiiytko(char **hrmotsne)
+int at_lkov(char **hrmotsne)
 {
 	pid_t pid;
 	int status;

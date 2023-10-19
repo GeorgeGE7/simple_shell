@@ -1,11 +1,11 @@
 #include "header.h"
 
 /**
- * trrtijkoiq - write file with user aghutbtss
+ * history - write file with user aghutbtss
  * @aghutbts: user aghutbts
  * Return: 0 on success -1 if failed
  */
-int trrtijkoiq(char *aghutbts)
+int history(char *aghutbts)
 {
 	char *filename = ".simple_shell_history";
 	ssize_t fd, w;

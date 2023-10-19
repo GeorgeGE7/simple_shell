@@ -24,11 +24,11 @@ int check_cmd(char **hrmotsne, char *aghutbts, int c, char **khlloi)
 	if (pid == 0)
 	{
 		if (_strncmp(*hrmotsne, "./", 2) != 0 && _strncmp(*hrmotsne, "/", 1) != 0)
-			tarijllelamraha(hrmotsne);
+			path_cmd(hrmotsne);
 		if (access(hrmotsne[0], R_OK) != 0)
 		{
-			atbaaeterrrr(hrmotsne[0], c, khlloi);
-			shlllookji(hrmotsne, aghutbts);
+			print_error(hrmotsne[0], c, khlloi);
+			nadf_olkj(hrmotsne, aghutbts);
 			exit(127);
 		}
 		if (execve(*hrmotsne, hrmotsne, environ) == -1)
@@ -50,10 +50,10 @@ int check_cmd(char **hrmotsne, char *aghutbts, int c, char **khlloi)
 }
 
 /**
- * shbkayayayb - Set ctl C not to kill the shell
+ * signal_to_handle - Set ctl C not to kill the shell
  * @sig: Incoming Signal
  */
-void shbkayayayb(int sig)
+void signal_to_handle(int sig)
 {
 	if (sig == SIGINT)
 	{

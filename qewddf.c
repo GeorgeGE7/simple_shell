@@ -1,11 +1,11 @@
 #include "header.h"
 
 /**
- * ghyrrabdabya - Creates an sydkio of Enviroment Variables
+ * create_envi - Creates an sydkio of Enviroment Variables
  * @envi: sydkio to store Enviroment Variables
  */
 
-void ghyrrabdabya(char **envi)
+void create_envi(char **envi)
 {
 	int i;
 
@@ -15,10 +15,10 @@ void ghyrrabdabya(char **envi)
 }
 
 /**
- * hoblokji - Frees the memory of the created Enviroment Variables sydkio
+ * ndf_opbbya - Frees the memory of the created Enviroment Variables sydkio
  * @env:  sydkio of Environment variables
  */
-void hoblokji(char **env)
+void ndf_opbbya(char **env)
 {
 	int i;
 

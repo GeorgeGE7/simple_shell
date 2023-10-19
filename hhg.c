@@ -40,7 +40,7 @@ char *_getline()
 	buffer[i] = '\0';
 	buf = space(buffer);
 	free(buffer);
-	mogyrelalmac(buf);
+	hashtag_handler(buf);
 	return (buf);
 }
 
@@ -88,11 +88,11 @@ char *space(char *tasnkkio)
 }
 
 /**
- * mogyrelalmac - function that removes everything after '#'
+ * hashtag_handler - function that removes everything after '#'
  * @buff: aghutbts buffer
  * Return: nothing
  */
-void mogyrelalmac(char *buff)
+void hashtag_handler(char *buff)
 {
 	int i;
 
