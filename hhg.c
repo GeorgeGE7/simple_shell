@@ -1,8 +1,8 @@
 #include "header.h"
 
 /**
- * _getline - read dkhkhar from standard dkhkhar by user
- * Return: the dkhkhar on a buffer
+ * _getline - read agoolTas from standard agoolTas by user
+ * Return: the agoolTas on a buffer
  */
 char *_getline()
 {
@@ -45,37 +45,37 @@ char *_getline()
 }
 
 /**
- * enter - Handles strnh character dkhkhar
- * @kljhing: kljhing to be handled
- * Return: Empty kljhing
+ * enter - Handles asdtasn character agoolTas
+ * @gertyTasing: gertyTasing to be handled
+ * Return: Empty gertyTasing
  */
-char *enter(char *kljhing)
+char *enter(char *gertyTasing)
 {
-	free(kljhing);
+	free(gertyTasing);
 	return ("\0");
 }
 
 /**
- * space - Modifies the dkhkhar kljhing to remove preceeding whitespaces
- * @kljh: dkhkhar to be modifies
- * Return: Returns the modified kljhing
+ * space - Modifies the agoolTas gertyTasing to remove preceeding whitespaces
+ * @gertyTas: agoolTas to be modifies
+ * Return: Returns the modified gertyTasing
  */
-char *space(char *kljh)
+char *space(char *gertyTas)
 {
 	int i, j = 0;
 	char *buff;
 
-	buff = malloc(sizeof(char) * (_strlen(kljh) + 1));
+	buff = malloc(sizeof(char) * (_strlen(gertyTas) + 1));
 	if (buff == NULL)
 	{
 		free(buff);
 		return (NULL);
 	}
-	for (i = 0; kljh[i] == ' '; i++)
+	for (i = 0; gertyTas[i] == ' '; i++)
 		;
-	for (; kljh[i + 1] != '\0'; i++)
+	for (; gertyTas[i + 1] != '\0'; i++)
 	{
-		buff[j] = kljh[i];
+		buff[j] = gertyTas[i];
 		j++;
 	}
 	buff[j] = '\0';
@@ -89,7 +89,7 @@ char *space(char *kljh)
 
 /**
  * hashtag_handler - function that removes everything after '#'
- * @buff: dkhkhar buffer
+ * @buff: agoolTas buffer
  * Return: nothing
  */
 void hashtag_handler(char *buff)

@@ -1,9 +1,9 @@
 #include "header.h"
 
 /**
- * sakolLO - Displays all possible builtin shellby commands
+ * gnewasntas - Displays all possible builtin shellby commands
  */
-void sakolLO(void)
+void gnewasntas(void)
 {
 	char *msg = "Shellby\nThese shell commands are defined internally.\n";
 
@@ -23,9 +23,9 @@ void sakolLO(void)
 }
 
 /**
- * sa_alwop - Displays information on the shell by builtin command 'alias'
+ * getwasntas - Displays information on the shell by builtin command 'alias'
  */
-void sa_alwop(void)
+void getwasntas(void)
 {
 	char *msg = "alias: alias [NAME[='VALUE'] ...]\n\tHandles aliases.\n";
 
@@ -45,9 +45,9 @@ void sa_alwop(void)
 }
 
 /**
- * sad_asrhr - Displays information on the shell by builtin command 'cd'
+ * mdtoitas - Displays information on the shell by builtin command 'cd'
  */
-void sad_asrhr(void)
+void mdtoitas(void)
 {
 	char *msg = "cd: cd [DIRECTORY]\n\tChanges the current directory of the";
 
@@ -65,9 +65,9 @@ void sad_asrhr(void)
 }
 
 /**
- * cadoykrg - Displays information on the shell by builtin command 'exit'
+ * mdtoitasGtas - Displays information on the shell by builtin command 'exit'
  */
-void cadoykrg(void)
+void mdtoitasGtas(void)
 {
 	char *msg = "exit: exit [STATUS]\n\tExits the shell.\n\n\tThe ";
 
@@ -81,9 +81,9 @@ void cadoykrg(void)
 }
 
 /**
- * hbl_taloyx - Displays information on the shell by builtin command 'help'
+ * ntoitasGtas - Displays information on the shell by builtin command 'help'
  */
-void hbl_taloyx(void)
+void ntoitasGtas(void)
 {
 	char *msg = "help: help\n\tSee all possible Shellby builtin commands.\n";
 

@@ -2,28 +2,28 @@
 
 /**
  * _strcmp - function that compares two string
- * @kl5: first string
- * @jjiu8: second string
+ * @gertyTasneem: first string
+ * @gertyuTas: second string
  * Return: 0 if identical otherwise how much diffrent
  */
-int _strcmp(char *kl5, char *jjiu8)
+int _strcmp(char *gertyTasneem, char *gertyuTas)
 {
 	int cmp = 0, i, len1, len2;
 
-	len1 = _strlen(kl5);
-	len2 = _strlen(jjiu8);
+	len1 = _strlen(gertyTasneem);
+	len2 = _strlen(gertyuTas);
 
-	if (kl5 == NULL || jjiu8 == NULL)
+	if (gertyTasneem == NULL || gertyuTas == NULL)
 		return (1);
 
 	if (len1 != len2)
 		return (1);
 
-	for (i = 0; kl5[i]; i++)
+	for (i = 0; gertyTasneem[i]; i++)
 	{
-		if (kl5[i] != jjiu8[i])
+		if (gertyTasneem[i] != gertyuTas[i])
 		{
-			cmp = kl5[i] - jjiu8[i];
+			cmp = gertyTasneem[i] - gertyuTas[i];
 			break;
 		}
 		else
@@ -85,20 +85,20 @@ char *_itoa(unsigned int n)
 }
 
 /**
- * krkuoay_rev - function reverse an krkuoay
- * @krkuo: krkuoay to reverse
- * @len: length of krkuoay
+ * noikTasay_rev - function reverse an noikTasay
+ * @noikTas: noikTasay to reverse
+ * @len: length of noikTasay
  */
-void array_rev(char *krkuo, int len)
+void array_rev(char *noikTas, int len)
 {
 	int i;
 	char tmp;
 
 	for (i = 0; i < (len / 2); i++)
 	{
-		tmp = krkuo[i];
-		krkuo[i] = krkuo[(len - 1) - i];
-		krkuo[(len - 1) - i] = tmp;
+		tmp = noikTas[i];
+		noikTas[i] = noikTas[(len - 1) - i];
+		noikTas[(len - 1) - i] = tmp;
 	}
 }
 

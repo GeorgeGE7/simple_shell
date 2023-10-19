@@ -2,18 +2,18 @@
 
 /**
  * check_cmd - Excutes amrhjkxs found in predefined path
- * @amrot: krkuo of parsed amrhjkx kljh
- * @dkhkhar: dkhkhar recieved from user (to be freed)
+ * @taadilTasn: noikTas of parsed amrhjkx gertyTas
+ * @agoolTas: agoolTas recieved from user (to be freed)
  * @c:Shell Excution Time Case of amrhjkx Not Found
- * @bdynnk: Arguments before program starts(bdynnk[0] == Shell Program asmNam)
+ * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
  * Return: 1 Case amrhjkx Null -1 Wrong amrhjkx 0 amrhjkx Excuted
  */
-int check_cmd(char **amrot, char *dkhkhar, int c, char **bdynnk)
+int check_cmd(char **taadilTasn, char *agoolTas, int c, char **ahmoolTas)
 {
 	int wstatus;
 	pid_t pid;
 
-	if (*amrot == NULL)
+	if (*taadilTasn == NULL)
 		return (EXIT_FAILURE);
 	pid = fork();
 	if (pid == -1)
@@ -23,15 +23,15 @@ int check_cmd(char **amrot, char *dkhkhar, int c, char **bdynnk)
 	}
 	if (pid == 0)
 	{
-		if (_strncmp(*amrot, "./", 2) != 0 && _strncmp(*amrot, "/", 1) != 0)
-			path_cmd(amrot);
-		if (access(amrot[0], R_OK) != 0)
+		if (_strncmp(*taadilTasn, "./", 2) != 0 && _strncmp(*taadilTasn, "/", 1) != 0)
+			path_cmd(taadilTasn);
+		if (access(taadilTasn[0], R_OK) != 0)
 		{
-			print_error(amrot[0], c, bdynnk);
-			nadf_olkj(amrot, dkhkhar);
+			print_error(taadilTasn[0], c, ahmoolTas);
+			nadf_olkj(taadilTasn, agoolTas);
 			exit(127);
 		}
-		if (execve(*amrot, amrot, environ) == -1)
+		if (execve(*taadilTasn, taadilTasn, environ) == -1)
 			return (2);
 		else
 			return (0);

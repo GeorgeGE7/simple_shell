@@ -1,31 +1,31 @@
 #include "header.h"
 
 /**
- * khygra - Changes directory
- * @amrot: Parsed amrhjkx
+ * bycaartas - Changes directory
+ * @taadilTasn: Parsed amrhjkx
  * @st: Status of last amrhjkx executed
  * Return: 0 on success 1 if failed (For OLDPWD Always 0 incase of no OLDPWD)
  */
-int khygra(char **amrot, __attribute__((unused))int st)
+int bycaartas(char **taadilTasn, __attribute__((unused))int st)
 {
-	int aikimal = -1;
+	int tasgmtasn = -1;
 	char cwd[PATH_MAX];
 
-	if (amrot[1] == NULL)
-		aikimal = chdir(getenv("HOME"));
-	else if (_strcmp(amrot[1], "-") == 0)
+	if (taadilTasn[1] == NULL)
+		tasgmtasn = chdir(getenv("HOME"));
+	else if (_strcmp(taadilTasn[1], "-") == 0)
 	{
-		aikimal = chdir(getenv("OLDPWD"));
+		tasgmtasn = chdir(getenv("OLDPWD"));
 	}
 	else
-		aikimal = chdir(amrot[1]);
+		tasgmtasn = chdir(taadilTasn[1]);
 
-	if (aikimal == -1)
+	if (tasgmtasn == -1)
 	{
 		perror("hsh");
 		return (-1);
 	}
-	else if (aikimal != -1)
+	else if (tasgmtasn != -1)
 	{
 		getcwd(cwd, sizeof(cwd));
 		setenv("OLDPWD", getenv("PWD"), 1);
@@ -35,12 +35,12 @@ int khygra(char **amrot, __attribute__((unused))int st)
 }
 
 /**
- * jjiuty_biag - Display enviroment variable
- * @amrot: parsed amrhjkx
+ * qzyrtas - Display enviroment variable
+ * @taadilTasn: parsed amrhjkx
  * @st: status of last amrhjkx executed
  * Return: Always 0
  */
-int jjiuty_biag(__attribute__((unused)) char **amrot, __attribute__((unused)) int st)
+int qzyrtas(__attribute__((unused)) char **taadilTasn, __attribute__((unused)) int st)
 {
 	size_t i;
 	int len;
@@ -55,27 +55,27 @@ int jjiuty_biag(__attribute__((unused)) char **amrot, __attribute__((unused)) in
 }
 
 /**
- * shrmytpz - execute echo cases
+ * shimyrtas - execute echo cases
  * @st: statue of last amrhjkx executed
- * @amrot: parsed amrhjkx
+ * @taadilTasn: parsed amrhjkx
  * Return: Always 1 Or execute normal echo
  */
-int shrmytpz(char **amrot, int st)
+int shimyrtas(char **taadilTasn, int st)
 {
 	char *path;
 	unsigned int pid = getppid();
 
-	if (_strncmp(amrot[1], "$?", 2) == 0)
+	if (_strncmp(taadilTasn[1], "$?", 2) == 0)
 	{
-		atba_rkmSahy(st);
+		srwpyrtas(st);
 		PRINT("\n");
 	}
-	else if (_strncmp(amrot[1], "$$", 2) == 0)
+	else if (_strncmp(taadilTasn[1], "$$", 2) == 0)
 	{
-		atrtRkmj(pid);
+		nlxspyrtas(pid);
 		PRINT("\n");
 	}
-	else if (_strncmp(amrot[1], "$PATH", 5) == 0)
+	else if (_strncmp(taadilTasn[1], "$PATH", 5) == 0)
 	{
 		path = _getenv("PATH");
 		PRINT(path);
@@ -83,24 +83,24 @@ int shrmytpz(char **amrot, int st)
 		free(path);
 	}
 	else
-		return (at_lkov(amrot));
+		return (nltGpyrtas(taadilTasn));
 
 	return (1);
 }
 
 /**
- * jjiutyharf - display history of user dkhkhar on simple_shell
+ * laspyrtas - display history of user agoolTas on simple_shell
  * @c: parsed amrhjkx
  * @st: status of last amrhjkx executed
  * Return: 0 success or -1 if fail
  */
-int jjiutyharf(__attribute__((unused))char **c, __attribute__((unused))int st)
+int laspyrtas(__attribute__((unused))char **c, __attribute__((unused))int st)
 {
 	char *filename = ".simple_shell_history";
 	FILE *fp;
-	char *strnh = NULL;
+	char *asdtasn = NULL;
 	size_t len = 0;
-	int addaadi = 0;
+	int geoMalTasn = 0;
 	char *er;
 
 	fp = fopen(filename, "r");
@@ -108,17 +108,17 @@ int jjiutyharf(__attribute__((unused))char **c, __attribute__((unused))int st)
 	{
 		return (-1);
 	}
-	while ((getline(&strnh, &len, fp)) != -1)
+	while ((getline(&asdtasn, &len, fp)) != -1)
 	{
-		addaadi++;
-		er = _itoa(addaadi);
+		geoMalTasn++;
+		er = _itoa(geoMalTasn);
 		PRINT(er);
 		free(er);
 		PRINT(" ");
-		PRINT(strnh);
+		PRINT(asdtasn);
 	}
-	if (strnh)
-		free(strnh);
+	if (asdtasn)
+		free(asdtasn);
 	fclose(fp);
 	return (0);
 }

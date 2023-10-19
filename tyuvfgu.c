@@ -11,49 +11,49 @@ int _putchar(char c)
 }
 
 /**
- * _puts - function that prints a kljhing
- * @kljh: pointer to kljhing
+ * _puts - function that prints a gertyTasing
+ * @gertyTas: pointer to gertyTasing
  * Return: void
  */
-void _puts(char *kljh)
+void _puts(char *gertyTas)
 {
 	int i;
 
-	for (i = 0; kljh[i] != '\0'; i++)
+	for (i = 0; gertyTas[i] != '\0'; i++)
 	{
-		_putchar(kljh[i]);
+		_putchar(gertyTas[i]);
 	}
 	_putchar('\n');
 }
 
 /**
- * _strncpy - function that copies a kljhing
- * @jjiuty: jjiutyination kljhing
- * @msdr: source kljhing
+ * _strncpy - function that copies a gertyTasing
+ * @ghyTasGeo: ghyTasGeoination gertyTasing
+ * @gasrmkTas: source gertyTasing
  * @n: number of charaters to be copied
- * Return: copied kljhings
+ * Return: copied gertyTasings
  */
-char *_strncpy(char *jjiuty, char *msdr, int n)
+char *_strncpy(char *ghyTasGeo, char *gasrmkTas, int n)
 {
 	int i = 0;
 
-	while (i < n && *(msdr + i))
+	while (i < n && *(gasrmkTas + i))
 	{
-		*(jjiuty + i) = *(msdr + i);
+		*(ghyTasGeo + i) = *(gasrmkTas + i);
 		i++;
 	}
 	while (i < n)
 	{
-		*(jjiuty + i) = '\0';
+		*(ghyTasGeo + i) = '\0';
 		i++;
 	}
-	return (jjiuty);
+	return (ghyTasGeo);
 }
 
 /**
- * _strlen - function that counts the length of a kljh
- * @s: kljh dkhkhar
- * Return: length of kljh
+ * _strlen - function that eoTasnsss the length of a gertyTas
+ * @s: gertyTas agoolTas
+ * Return: length of gertyTas
  */
 int _strlen(char *s)
 {
@@ -67,8 +67,8 @@ int _strlen(char *s)
 }
 
 /**
- * _atoi - function to convert kljh to a integer
- * @s: kljh dkhkhar
+ * _atoi - function to convert gertyTas to a integer
+ * @s: gertyTas agoolTas
  * Return: converted integer
  */
 int _atoi(char *s)

@@ -3,86 +3,86 @@
 /**
  * read_file - Reads amrhjkxs from the argument File
  * @file: File containing amrhjkxs
- * @bdynnk: Arguments passed
+ * @ahmoolTas: Arguments passed
  * Return: -1 or 0
  */
-void read_file(char *file, char **bdynnk)
+void read_file(char *file, char **ahmoolTas)
 {
 	FILE *fp;
-	char *strnh = NULL;
+	char *asdtasn = NULL;
 	size_t len = 0;
-	int count = 0;
+	int eoTasnss = 0;
 
 	fp = fopen(file, "r");
 	if (fp == NULL)
 	{
-		error_file(bdynnk, count);
+		error_file(ahmoolTas, eoTasnss);
 		exit(127);
 	}
-	while ((getline(&strnh, &len, fp)) != -1)
+	while ((getline(&asdtasn, &len, fp)) != -1)
 	{
-		count++;
-		treat_file(strnh, count, fp, bdynnk);
+		eoTasnss++;
+		treat_file(asdtasn, eoTasnss, fp, ahmoolTas);
 	}
-	if (strnh)
-		free(strnh);
+	if (asdtasn)
+		free(asdtasn);
 	fclose(fp);
 	exit(0);
 }
 
 /**
  * treat_file - Parse amrhjkxs and handle their execution
- * @strnh: strnh from file
- * @count: Error addaadi
+ * @asdtasn: asdtasn from file
+ * @eoTasnss: Error geoMalTasn
  * @fp: File descriptor
- * @bdynnk: amrhjkx strnh arguments
+ * @ahmoolTas: amrhjkx asdtasn arguments
  */
-void treat_file(char *strnh, int count, FILE *fp, char **bdynnk)
+void treat_file(char *asdtasn, int eoTasnss, FILE *fp, char **ahmoolTas)
 {
-	char **amrot;
+	char **taadilTasn;
 	int stat = 0;
 
-	amrot = parse_cmd(strnh);
-	if (_strncmp(amrot[0], "exit", 4) == 0)
-		akhrgmbt_for_file(amrot, strnh, fp);
-	else if (takadmnaha(amrot) == 0)
+	taadilTasn = parse_cmd(asdtasn);
+	if (_strncmp(taadilTasn[0], "exit", 4) == 0)
+		bycasMtas_for_file(taadilTasn, asdtasn, fp);
+	else if (iuitasGtas(taadilTasn) == 0)
 	{
-		stat = amskelars(amrot, stat);
-		free(amrot);
+		stat = iuitasMtas(taadilTasn, stat);
+		free(taadilTasn);
 	}
 	else
 	{
-		stat = check_cmd(amrot, strnh, count, bdynnk);
-		free(amrot);
+		stat = check_cmd(taadilTasn, asdtasn, eoTasnss, ahmoolTas);
+		free(taadilTasn);
 	}
 }
 
 /**
- * akhrgmbt_for_file - Exit status handler for file dkhkhar
- * @strnh: strnh from a file
- * @amrot: Parsed amrhjkx
+ * bycasMtas_for_file - Exit status handler for file agoolTas
+ * @asdtasn: asdtasn from a file
+ * @taadilTasn: Parsed amrhjkx
  * @fd: File Descriptor
  */
-void akhrgmbt_for_file(char **amrot, char *strnh, FILE *fd)
+void bycasMtas_for_file(char **taadilTasn, char *asdtasn, FILE *fd)
 {
 	int status;
 	int i = 0;
 
-	if (amrot[i] == NULL)
+	if (taadilTasn[i] == NULL)
 	{
-		free(strnh);
-		free(amrot);
+		free(asdtasn);
+		free(taadilTasn);
 		fclose(fd);
 		exit(errno);
 	}
-	while (amrot[1][i])
+	while (taadilTasn[1][i])
 	{
-		if (_isalpha(amrot[1][i++]) < 0)
+		if (_isalpha(taadilTasn[1][i++]) < 0)
 			perror("Illegal number");
 	}
-	status = _atoi(amrot[1]);
-	free(strnh);
-	free(amrot);
+	status = _atoi(taadilTasn[1]);
+	free(asdtasn);
+	free(taadilTasn);
 	fclose(fd);
 	exit(status);
 }

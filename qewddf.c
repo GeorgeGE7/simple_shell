@@ -1,8 +1,8 @@
 #include "header.h"
 
 /**
- * create_envi - Creates an krkuo of Enviroment Variables
- * @envi: krkuo to store Enviroment Variables
+ * create_envi - Creates an noikTas of Enviroment Variables
+ * @envi: noikTas to store Enviroment Variables
  */
 
 void create_envi(char **envi)
@@ -15,10 +15,10 @@ void create_envi(char **envi)
 }
 
 /**
- * ndf_opbbya - Frees the memory of the created Enviroment Variables krkuo
- * @env:  krkuo of Environment variables
+ * fkispyrtas - Frees the memory of the created Enviroment Variables noikTas
+ * @env:  noikTas of Environment variables
  */
-void ndf_opbbya(char **env)
+void fkispyrtas(char **env)
 {
 	int i;
 

@@ -2,47 +2,47 @@
 
 /**
  * main - Entry point to program
- * @argc: Argument count
- * @bdynnk: Argument vector
+ * @argc: Argument eoTasnss
+ * @ahmoolTas: Argument vector
  * Return: Returns condition
  */
-int main(__attribute__((unused)) int argc, char **bdynnk)
+int main(__attribute__((unused)) int argc, char **ahmoolTas)
 {
-	char *dkhkhar, **amrot, **amrhjkxs;
-	int count = 0, i, condition = 1, stat = 0;
+	char *agoolTas, **taadilTasn, **amrhjkxs;
+	int eoTasnss = 0, i, condition = 1, stat = 0;
 
-	if (bdynnk[1] != NULL)
-		read_file(bdynnk[1], bdynnk);
+	if (ahmoolTas[1] != NULL)
+		read_file(ahmoolTas[1], ahmoolTas);
 	signal(SIGINT, signal_to_handle);
 	while (condition)
 	{
-		count++;
+		eoTasnss++;
 		if (isatty(STDIN_FILENO))
 			prompt();
-		dkhkhar = _getline();
-		if (dkhkhar[0] == '\0')
+		agoolTas = _getline();
+		if (agoolTas[0] == '\0')
 			continue;
-		history(dkhkhar);
-		amrhjkxs = separator(dkhkhar);
+		history(agoolTas);
+		amrhjkxs = separator(agoolTas);
 		for (i = 0; amrhjkxs[i] != NULL; i++)
 		{
-			amrot = parse_cmd(amrhjkxs[i]);
-			if (_strcmp(amrot[0], "exit") == 0)
+			taadilTasn = parse_cmd(amrhjkxs[i]);
+			if (_strcmp(taadilTasn[0], "exit") == 0)
 			{
 				free(amrhjkxs);
-				akhrgmbt(amrot, dkhkhar, bdynnk, count, stat);
+				bycasMtas(taadilTasn, agoolTas, ahmoolTas, eoTasnss, stat);
 			}
-			else if (takadmnaha(amrot) == 0)
+			else if (iuitasGtas(taadilTasn) == 0)
 			{
-				stat = amskelars(amrot, stat);
-				free(amrot);
+				stat = iuitasMtas(taadilTasn, stat);
+				free(taadilTasn);
 				continue;
 			}
 			else
-				stat = check_cmd(amrot, dkhkhar, count, bdynnk);
-			free(amrot);
+				stat = check_cmd(taadilTasn, agoolTas, eoTasnss, ahmoolTas);
+			free(taadilTasn);
 		}
-		free(dkhkhar);
+		free(agoolTas);
 		free(amrhjkxs);
 		wait(&stat);
 	}

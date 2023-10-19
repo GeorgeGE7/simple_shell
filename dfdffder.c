@@ -1,9 +1,9 @@
 #include "header.h"
 
 /**
- * sad_elbyal - Displays information on the shell by builtin amrhjkx 'env'
+ * funtasn - Displays information on the shell by builtin amrhjkx 'env'
  */
-void sad_elbyal(void)
+void funtasn(void)
 {
 	char *msg = "env: env\n\tPrints the current environment.\n";
 
@@ -11,9 +11,9 @@ void sad_elbyal(void)
 }
 
 /**
- * saaf_ytoz - Displays information on the shell by builtin amrhjkx 'setenv'
+ * funtasntasn - Displays information on the shell by builtin amrhjkx 'setenv'
  */
-void saaf_ytoz(void)
+void funtasntasn(void)
 {
 	char *msg = "setenv: setenv [VARIABLE] [VALUE]\n\tInitializes a new";
 
@@ -25,10 +25,10 @@ void saaf_ytoz(void)
 }
 
 /**
- * saPvz - Displays information on the shellby builtin amrhjkx
+ * newasntasn - Displays information on the shellby builtin amrhjkx
  * 'unsetenv'
  */
-void saPvz(void)
+void newasntasn(void)
 {
 	char *msg = "unsetenv: unsetenv [VARIABLE]\n\tRemoves an ";
 
@@ -40,28 +40,28 @@ void saPvz(void)
 }
 
 /**
- * azhrtaabt - display help for builtin amrhjkxs
- * @amrot: parsed amrhjkx
+ * hhitasGtas - display help for builtin amrhjkxs
+ * @taadilTasn: parsed amrhjkx
  * @st: Status of last amrhjkx executed
  * Return: 0 Success
  */
-int azhrtaabt(char **amrot, __attribute__((unused))int st)
+int hhitasGtas(char **taadilTasn, __attribute__((unused))int st)
 {
-	if (!amrot[1])
-		sakolLO();
-	else if (_strcmp(amrot[1], "alias") == 0)
-		sa_alwop();
-	else if (_strcmp(amrot[1], "cd") == 0)
-		sad_asrhr();
-	else if (_strcmp(amrot[1], "exit") == 0)
-		cadoykrg();
-	else if (_strcmp(amrot[1], "env") == 0)
-		sad_elbyal();
-	else if (_strcmp(amrot[1], "setenv") == 0)
-		saaf_ytoz();
-	else if (_strcmp(amrot[1], "unsetenv") == 0)
-		saPvz();
-	else if (_strcmp(amrot[1], "help") == 0)
-		hbl_taloyx();
+	if (!taadilTasn[1])
+		gnewasntas();
+	else if (_strcmp(taadilTasn[1], "alias") == 0)
+		getwasntas();
+	else if (_strcmp(taadilTasn[1], "cd") == 0)
+		mdtoitas();
+	else if (_strcmp(taadilTasn[1], "exit") == 0)
+		mdtoitasGtas();
+	else if (_strcmp(taadilTasn[1], "env") == 0)
+		funtasn();
+	else if (_strcmp(taadilTasn[1], "setenv") == 0)
+		funtasntasn();
+	else if (_strcmp(taadilTasn[1], "unsetenv") == 0)
+		newasntasn();
+	else if (_strcmp(taadilTasn[1], "help") == 0)
+		ntoitasGtas();
 	return (0);
 }

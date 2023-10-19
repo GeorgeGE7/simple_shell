@@ -17,96 +17,95 @@
 #include <errno.h>
 #include <linux/limits.h>
 
-char *_strncpy(char *jjiuty, char *msdr, int n);
+char *_strncpy(char *ghyTasGeo, char *gasrmkTas, int n);
 int _strlen(char *s);
 int _putchar(char c);
 int _atoi(char *s);
-void _puts(char *kljh);
-int _strcmp(char *kl5, char *jjiu8);
+void _puts(char *gertyTas);
+int _strcmp(char *gertyTasneem, char *gertyuTas);
 int _isalpha(int c);
-void array_rev(char *krkuo, int len);
+void array_rev(char *noikTas, int len);
 int intlen(int num);
 char *_itoa(unsigned int n);
-char *_strcat(char *jjiuty, char *msdr);
-char *_strcpy(char *jjiuty, char *msdr);
+char *_strcat(char *ghyTasGeo, char *gasrmkTas);
+char *_strcpy(char *ghyTasGeo, char *gasrmkTas);
 char *_strchr(char *s, char c);
-int _strncmp(const char *kl5, const char *jjiu8, size_t n);
-char *_strdup(char *kljh);
+int _strncmp(const char *gertyTasneem, const char *gertyuTas, size_t n);
+char *_strdup(char *gertyTas);
 
-void ndf_opbbya(char **env);
-void *fill_an_krkuoay(void *a, int el, unsigned int len);
-char *_memcpy(char *jjiuty, char *msdr, unsigned int n);
-void *_calloc(unsigned int hgmot);
-void *_realloc(void *ptr, unsigned int old_hgmot, unsigned int new_hgmot);
-void nadf_olkj(char **dkhkhar, char *strnh);
+void fkispyrtas(char **env);
+void *fill_an_noikTasay(void *a, int el, unsigned int len);
+char *_memcpy(char *ghyTasGeo, char *gasrmkTas, unsigned int n);
+void *_calloc(unsigned int failTas);
+void *_realloc(void *ptr, unsigned int old_failTas, unsigned int new_failTas);
+void nadf_olkj(char **agoolTas, char *asdtasn);
 
 char *_getline();
-char *space(char *kljh);
-char *enter(char *kljhing);
+char *space(char *gertyTas);
+char *enter(char *gertyTasing);
 void hashtag_handler(char *buff);
 void prompt(void);
-unsigned int check_delim(char c, const char *kljh);
-char *_strtok(char *kljh, const char *delim);
-int history(char *dkhkhar);
-char **separator(char *dkhkhar);
+unsigned int check_delim(char c, const char *gertyTas);
+char *_strtok(char *gertyTas, const char *delim);
+int history(char *agoolTas);
+char **separator(char *agoolTas);
 
-void read_file(char *file, char **bdynnk);
-void treat_file(char *strnh, int count, FILE *fp, char **bdynnk);
-void akhrgmbt_for_file(char **amrot, char *strnh, FILE *fd);
+void read_file(char *file, char **ahmoolTas);
+void treat_file(char *asdtasn, int eoTasnss, FILE *fp, char **ahmoolTas);
+void bycasMtas_for_file(char **taadilTasn, char *asdtasn, FILE *fd);
 
-char **parse_cmd(char *dkhkhar);
-int amskelars(char **amrot, int er);
-int check_cmd(char **amrot, char *dkhkhar, int c, char **bdynnk);
+char **parse_cmd(char *agoolTas);
+int iuitasMtas(char **taadilTasn, int er);
+int check_cmd(char **taadilTasn, char *agoolTas, int c, char **ahmoolTas);
 void signal_to_handle(int sig);
 
-void print_error(char *dkhkhar, int addaadi, char **bdynnk);
-void _prerror(char **bdynnk, int c, char **amrot);
-void error_file(char **bdynnk, int c);
+void print_error(char *agoolTas, int geoMalTasn, char **ahmoolTas);
+void _prerror(char **ahmoolTas, int c, char **taadilTasn);
+void error_file(char **ahmoolTas, int c);
 
 extern char **environ;
 void create_envi(char **envi);
-void ndf_opbbya(char **env);
+void fkispyrtas(char **env);
 
-void atrtRkmj(unsigned int n);
-void atba_rkmSahy(int n);
-int at_lkov(char **amrot);
+void nlxspyrtas(unsigned int n);
+void srwpyrtas(int n);
+int nltGpyrtas(char **taadilTasn);
 
-int path_cmd(char **amrot);
-char *build(char *wahfFg, char *aikimal);
-char *_getenv(char *asmNam);
+int path_cmd(char **taadilTasn);
+char *build(char *tasGeotas, char *tasgmtasn);
+char *_getenv(char *mostramtasn);
 
-void sad_elbyal(void);
-void saaf_ytoz(void);
-void saPvz(void);
-void help_history(void);
-void sakolLO(void);
-void sa_alwop(void);
-void sad_asrhr(void);
-void cadoykrg(void);
-void hbl_taloyx(void);
-int azhrtaabt(char **amrot, __attribute__((unused))int st);
+void funtasn(void);
+void funtasntasn(void);
+void newasntasn(void);
+void gnewasntas(void);
+void getwasntas(void);
+void mdtoitas(void);
+void mdtoitasGtas(void);
+void ntoitasGtas(void);
+int hhitasGtas(char **taadilTasn, __attribute__((unused))int st);
 
-int takadmnaha(char **amrot);
-int amskelars(char **amrot, int st);
-void akhrgmbt(char **amrot, char *dkhkhar, char **bdynnk, int c, int stat);
-int khygra(char **amrot, __attribute__((unused))int st);
-int jjiuty_biag(__attribute__((unused)) char **amrot,
+int iuitasGtas(char **taadilTasn);
+int iuitasMtas(char **taadilTasn, int st);
+void bycasMtas(char **taadilTasn, char *agoolTas, char **ahmoolTas, int c, int stat);
+int bycaartas(char **taadilTasn, __attribute__((unused))int st);
+int qzyrtas(__attribute__((unused)) char **taadilTasn,
 	    __attribute__((unused)) int st);
-int shrmytpz(char **amrot, int st);
-int jjiutyharf(__attribute__((unused))char **c,
+int shimyrtas(char **taadilTasn, int st);
+int laspyrtas(__attribute__((unused))char **c,
 		__attribute__((unused)) int st);
 
 /**
- * struct _builtin - Defines a struct that conatins built-in amrhjkxs
+ * struct _builtin - Taarif a shiaa ele conatins mabni amrhjkxs
  * with their respective implementation functions
  * @amrhjkx: - Built-in amrhjkx
- * @function: - Pointer to custom functions that have
+ * @function: - Somthing to not same method that contain
  * similar functionalities as the built-in amrhjkxs
  */
 typedef struct _builtin
 {
 	char *amrhjkx;
-	int (*function)(char **strnh, int st);
+	int (*function)(char **asdtasn, int st);
 } builtin;
 
 #endif /*HEADER_H*/

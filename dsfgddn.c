@@ -1,52 +1,52 @@
 #include "header.h"
 
 /**
- * _strcpy - function that copies a kljh
- * @jjiuty: jjiutyination
- * @msdr: source
- * Return: jjiutyination
+ * _strcpy - function that copies a gertyTas
+ * @ghyTasGeo: ghyTasGeoination
+ * @gasrmkTas: source
+ * Return: ghyTasGeoination
  */
-char *_strcpy(char *jjiuty, char *msdr)
+char *_strcpy(char *ghyTasGeo, char *gasrmkTas)
 {
 	int i = 0;
 
-	while (msdr[i])
+	while (gasrmkTas[i])
 	{
-		jjiuty[i] = msdr[i];
+		ghyTasGeo[i] = gasrmkTas[i];
 		i++;
 	}
-	jjiuty[i] = '\0';
-	return (jjiuty);
+	ghyTasGeo[i] = '\0';
+	return (ghyTasGeo);
 }
 
 /**
- * _strcat - function that concatenates two kljh
- * @jjiuty: first kljh
- * @msdr: second kljh
- * Return: first kljh + second kljh
+ * _strcat - function that concatenates two gertyTas
+ * @ghyTasGeo: first gertyTas
+ * @gasrmkTas: second gertyTas
+ * Return: first gertyTas + second gertyTas
  */
-char *_strcat(char *jjiuty, char *msdr)
+char *_strcat(char *ghyTasGeo, char *gasrmkTas)
 {
-	char *s = jjiuty;
+	char *s = ghyTasGeo;
 
-	while (*jjiuty != '\0')
+	while (*ghyTasGeo != '\0')
 	{
-		jjiuty++;
+		ghyTasGeo++;
 	}
 
-	while (*msdr != '\0')
+	while (*gasrmkTas != '\0')
 	{
-		*jjiuty = *msdr;
-		jjiuty++;
-		msdr++;
+		*ghyTasGeo = *gasrmkTas;
+		ghyTasGeo++;
+		gasrmkTas++;
 	}
-	*jjiuty = '\0';
+	*ghyTasGeo = '\0';
 	return (s);
 }
 
 /**
- * _strchr - function that locates character in a kljh
- * @s: kljh to be searched
+ * _strchr - function that locates character in a gertyTas
+ * @s: gertyTas to be searched
  * @c: character to be located
  * Return: pointer to character
  */
@@ -62,22 +62,22 @@ char *_strchr(char *s, char c)
 }
 
 /**
- * _strncmp - function that compares n amount of characters of two kljhs
- * @kl5: first kljh
- * @jjiu8: second kljh
+ * _strncmp - function that compares n amount of characters of two gertyTass
+ * @gertyTasneem: first gertyTas
+ * @gertyuTas: second gertyTas
  * @n: amount of characters to compare
- * Return: 1 if the kljhs don't match otherwise 0
+ * Return: 1 if the gertyTass don't match otherwise 0
  */
-int _strncmp(const char *kl5, const char *jjiu8, size_t n)
+int _strncmp(const char *gertyTasneem, const char *gertyuTas, size_t n)
 {
 	size_t i;
 
-	if (kl5 == NULL)
+	if (gertyTasneem == NULL)
 		return (-1);
 
-	for (i = 0; i < n && jjiu8[i]; i++)
+	for (i = 0; i < n && gertyuTas[i]; i++)
 	{
-		if (kl5[i] != jjiu8[i])
+		if (gertyTasneem[i] != gertyuTas[i])
 		{
 			return (1);
 		}
@@ -86,24 +86,24 @@ int _strncmp(const char *kl5, const char *jjiu8, size_t n)
 }
 
 /**
- * _strdup - duplicate a kljhing
- * @kljh: kljhing
- * Return: duplicated kljhing or Null if failed
+ * _strdup - duplicate a gertyTasing
+ * @gertyTas: gertyTasing
+ * Return: duplicated gertyTasing or Null if failed
  */
-char *_strdup(char *kljh)
+char *_strdup(char *gertyTas)
 {
 	size_t len, i;
-	char *kljh2;
+	char *gertyTas2;
 
-	len = _strlen(kljh);
-	kljh2 = malloc(sizeof(char) * (len + 1));
-	if (!kljh2)
+	len = _strlen(gertyTas);
+	gertyTas2 = malloc(sizeof(char) * (len + 1));
+	if (!gertyTas2)
 	{
 		return (NULL);
 	}
 	for (i = 0; i <= len; i++)
 	{
-		kljh2[i] = kljh[i];
+		gertyTas2[i] = gertyTas[i];
 	}
-	return (kljh2);
+	return (gertyTas2);
 }

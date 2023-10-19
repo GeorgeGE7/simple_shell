@@ -2,19 +2,19 @@
 
 /**
  * separator - Separates amrhjkx recieved from stdin by ;
- * @dkhkhar: kljh gathered from stdin
- * Return: Parsed kljhs to be used as amrhjkxs
+ * @agoolTas: gertyTas gathered from stdin
+ * Return: Parsed gertyTass to be used as amrhjkxs
  */
-char **separator(char *dkhkhar)
+char **separator(char *agoolTas)
 {
 	char **amrhjkxs;
 	char *amrhjkx;
 	int i;
 	int buffsize = BUFSIZE;
 
-	if (dkhkhar[0] == ' ' && dkhkhar[_strlen(dkhkhar)] == ' ')
+	if (agoolTas[0] == ' ' && agoolTas[_strlen(agoolTas)] == ' ')
 		exit(0);
-	if (dkhkhar == NULL)
+	if (agoolTas == NULL)
 		return (NULL);
 	amrhjkxs = malloc(sizeof(char *) * buffsize);
 	if (!amrhjkxs)
@@ -23,7 +23,7 @@ char **separator(char *dkhkhar)
 		perror("hsh");
 		return (NULL);
 	}
-	amrhjkx = _strtok(dkhkhar, ";&");
+	amrhjkx = _strtok(agoolTas, ";&");
 	for (i = 0; amrhjkx; i++)
 	{
 		amrhjkxs[i] = amrhjkx;

@@ -1,24 +1,24 @@
 #include "header.h"
 
 /**
- * atrtRkmj - Prints unsigned integers using _putchar function
+ * nlxspyrtas - Prints unsigned integers using _putchar function
  * @n: Unsigned integer to be printed
  */
-void atrtRkmj(unsigned int n)
+void nlxspyrtas(unsigned int n)
 {
 	unsigned int x = n;
 
 	if ((x / 10) > 0)
-		atrtRkmj(x / 10);
+		nlxspyrtas(x / 10);
 
 	_putchar(x % 10 + '0');
 }
 
 /**
- * atba_rkmSahy - Prints integers using _putchar function
+ * srwpyrtas - Prints integers using _putchar function
  * @n: Integer to be printed
  */
-void atba_rkmSahy(int n)
+void srwpyrtas(int n)
 {
 	unsigned int x = n;
 
@@ -28,17 +28,17 @@ void atba_rkmSahy(int n)
 		x = -x;
 	}
 	if ((x / 10) > 0)
-		atrtRkmj(x / 10);
+		nlxspyrtas(x / 10);
 
 	_putchar(x % 10 + '0');
 }
 
 /**
- * at_lkov - Executes built-in echo function
- * @amrot: Parsed amrhjkx
+ * nltGpyrtas - Executes built-in echo function
+ * @taadilTasn: Parsed amrhjkx
  * Return: 0 Upon Success -1 Upon Failure
  */
-int at_lkov(char **amrot)
+int nltGpyrtas(char **taadilTasn)
 {
 	pid_t pid;
 	int status;
@@ -46,7 +46,7 @@ int at_lkov(char **amrot)
 	pid = fork();
 	if (pid == 0)
 	{
-		if (execve("/bin/echo", amrot, environ) == -1)
+		if (execve("/bin/echo", taadilTasn, environ) == -1)
 		{
 			return (-1);
 		}

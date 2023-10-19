@@ -3,22 +3,22 @@
 /**
  * _realloc -  reallocates a memory block using malloc and free
  *@ptr: pointer
- *@old_hgmot: previous hgmot Of The Pointer
- *@new_hgmot: new hgmot of the pointer
+ *@old_failTas: previous failTas Of The Pointer
+ *@new_failTas: new failTas of the pointer
  *Return: Pointer to reallocated memory
  */
-void *_realloc(void *ptr, unsigned int old_hgmot, unsigned int new_hgmot)
+void *_realloc(void *ptr, unsigned int old_failTas, unsigned int new_failTas)
 {
 	void *result;
 
-	if (new_hgmot == old_hgmot)
+	if (new_failTas == old_failTas)
 		return (ptr);
-	if (new_hgmot == 0 && ptr)
+	if (new_failTas == 0 && ptr)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	result = malloc(new_hgmot);
+	result = malloc(new_failTas);
 	if (result == NULL)
 	{
 		free(result);
@@ -26,12 +26,12 @@ void *_realloc(void *ptr, unsigned int old_hgmot, unsigned int new_hgmot)
 	}
 	if (ptr == NULL)
 	{
-		fill_an_krkuoay(result, '\0', new_hgmot);
+		fill_an_noikTasay(result, '\0', new_failTas);
 		free(ptr);
 	}
 	else
 	{
-		_memcpy(result, ptr, old_hgmot);
+		_memcpy(result, ptr, old_failTas);
 		free(ptr);
 	}
 	return (result);
@@ -39,44 +39,44 @@ void *_realloc(void *ptr, unsigned int old_hgmot, unsigned int new_hgmot)
 
 /**
  * nadf_olkj - free memory allocated
- * @amrot: krkuoay pointer
- * @strnh: char pointer
+ * @taadilTasn: noikTasay pointer
+ * @asdtasn: char pointer
  * Return: Void
  */
-void nadf_olkj(char **amrot, char *strnh)
+void nadf_olkj(char **taadilTasn, char *asdtasn)
 {
-	free(amrot);
-	free(strnh);
-	amrot = NULL;
-	strnh = NULL;
+	free(taadilTasn);
+	free(asdtasn);
+	taadilTasn = NULL;
+	asdtasn = NULL;
 }
 
 /**
- * _memcpy - copy bytes of memory from source to jjiutyination
- *@jjiuty: jjiutyination pointer
- *@msdr: source pointer
- *@n: hgmot to be copied
- *Return: pointer to jjiutyination
+ * _memcpy - copy bytes of memory from source to ghyTasGeoination
+ *@ghyTasGeo: ghyTasGeoination pointer
+ *@gasrmkTas: source pointer
+ *@n: failTas to be copied
+ *Return: pointer to ghyTasGeoination
  */
-char *_memcpy(char *jjiuty, char *msdr, unsigned int n)
+char *_memcpy(char *ghyTasGeo, char *gasrmkTas, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		jjiuty[i] = msdr[i];
+		ghyTasGeo[i] = gasrmkTas[i];
 	}
-	return (jjiuty);
+	return (ghyTasGeo);
 }
 
 /**
- * fill_an_krkuoay - fill an krkuoay by constant byte
+ * fill_an_noikTasay - fill an noikTasay by constant byte
  *@a: void pointer
  *@el: int
  *@len: length for int
  *Return: void pointer
  */
-void *fill_an_krkuoay(void *a, int el, unsigned int len)
+void *fill_an_noikTasay(void *a, int el, unsigned int len)
 {
 	char *p = a;
 	unsigned int i = 0;
@@ -91,21 +91,21 @@ void *fill_an_krkuoay(void *a, int el, unsigned int len)
 }
 
 /**
- * _calloc - allocates memory for an krkuoay using malloc
- *@hgmot: hgmot
+ * _calloc - allocates memory for an noikTasay using malloc
+ *@failTas: failTas
  *Return: void pointer
  */
-void *_calloc(unsigned int hgmot)
+void *_calloc(unsigned int failTas)
 {
 	char *a;
 	unsigned int i;
 
-	if (hgmot == 0)
+	if (failTas == 0)
 		return (NULL);
-	a = malloc(hgmot);
+	a = malloc(failTas);
 	if (a == NULL)
 		return (NULL);
-	for (i = 0; i < hgmot; i++)
+	for (i = 0; i < failTas; i++)
 	{
 		a[i] = '\0';
 	}

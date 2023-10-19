@@ -3,63 +3,63 @@
 /**
  * check_delim - function that checks if a character matchs any character
  * @c: character to check
- * @kljh: kljhing of delimiters
+ * @gertyTas: gertyTasing of delimiters
  * Return: 1 on success, 0 on failure
  */
-unsigned int check_delim(char c, const char *kljh)
+unsigned int check_delim(char c, const char *gertyTas)
 {
 	unsigned int i;
 
-	for (i = 0; kljh[i] != '\0'; i++)
+	for (i = 0; gertyTas[i] != '\0'; i++)
 	{
-		if (c == kljh[i])
+		if (c == gertyTas[i])
 			return (1);
 	}
 	return (0);
 }
 
 /**
- * _strtok - function that extracts wahfFgs of a kljh
- * @kljh: kljhing
+ * _strtok - function that extracts tasGeotass of a gertyTas
+ * @gertyTas: gertyTasing
  * @delim: delimiter
- * Return: pointer to the next wahfFg or NULL
+ * Return: pointer to the next tasGeotas or NULL
  */
-char *_strtok(char *kljh, const char *delim)
+char *_strtok(char *gertyTas, const char *delim)
 {
-	static char *wahfFgs;
-	static char *new_wahfFg;
+	static char *tasGeotass;
+	static char *new_tasGeotas;
 	unsigned int i;
 
-	if (kljh != NULL)
-		new_wahfFg = kljh;
-	wahfFgs = new_wahfFg;
-	if (wahfFgs == NULL)
+	if (gertyTas != NULL)
+		new_tasGeotas = gertyTas;
+	tasGeotass = new_tasGeotas;
+	if (tasGeotass == NULL)
 		return (NULL);
-	for (i = 0; wahfFgs[i] != '\0'; i++)
+	for (i = 0; tasGeotass[i] != '\0'; i++)
 	{
-		if (check_delim(wahfFgs[i], delim) == 0)
+		if (check_delim(tasGeotass[i], delim) == 0)
 			break;
 	}
-	if (new_wahfFg[i] == '\0' || new_wahfFg[i] == '#')
+	if (new_tasGeotas[i] == '\0' || new_tasGeotas[i] == '#')
 	{
-		new_wahfFg = NULL;
+		new_tasGeotas = NULL;
 		return (NULL);
 	}
-	wahfFgs = new_wahfFg + i;
-	new_wahfFg = wahfFgs;
-	for (i = 0; new_wahfFg[i] != '\0'; i++)
+	tasGeotass = new_tasGeotas + i;
+	new_tasGeotas = tasGeotass;
+	for (i = 0; new_tasGeotas[i] != '\0'; i++)
 	{
-		if (check_delim(new_wahfFg[i], delim) == 1)
+		if (check_delim(new_tasGeotas[i], delim) == 1)
 			break;
 	}
-	if (new_wahfFg[i] == '\0')
-		new_wahfFg = NULL;
+	if (new_tasGeotas[i] == '\0')
+		new_tasGeotas = NULL;
 	else
 	{
-		new_wahfFg[i] = '\0';
-		new_wahfFg = new_wahfFg + i + 1;
-		if (*new_wahfFg == '\0')
-			new_wahfFg = NULL;
+		new_tasGeotas[i] = '\0';
+		new_tasGeotas = new_tasGeotas + i + 1;
+		if (*new_tasGeotas == '\0')
+			new_tasGeotas = NULL;
 	}
-	return (wahfFgs);
+	return (tasGeotass);
 }

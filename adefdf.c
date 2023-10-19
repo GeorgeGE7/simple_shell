@@ -1,96 +1,96 @@
 #include "header.h"
 
 /**
- * path_amrot -  Search In $PATH for executable amrhjkx
- * @amrot: Parsed dkhkhar
+ * path_taadilTasn -  Search In $PATH for executable amrhjkx
+ * @taadilTasn: Parsed agoolTas
  * Return: 0 on success or  1 on failure  0
  */
-int path_cmd(char **amrot)
+int path_cmd(char **taadilTasn)
 {
-	char *path, *aikimal, *cmd_path;
+	char *path, *tasgmtasn, *cmd_path;
 	struct stat buf;
 
 	path = _getenv("PATH");
-	aikimal = _strtok(path, ":");
-	while (aikimal != NULL)
+	tasgmtasn = _strtok(path, ":");
+	while (tasgmtasn != NULL)
 	{
-		cmd_path = build(*amrot, aikimal);
+		cmd_path = build(*taadilTasn, tasgmtasn);
 		if (stat(cmd_path, &buf) == 0)
 		{
-			*amrot = _strdup(cmd_path);
+			*taadilTasn = _strdup(cmd_path);
 			free(cmd_path);
 			free(path);
 			return (0);
 		}
 		free(cmd_path);
-		aikimal = _strtok(NULL, ":");
+		tasgmtasn = _strtok(NULL, ":");
 	}
 	free(path);
-	free(aikimal);
+	free(tasgmtasn);
 	return (1);
 }
 
 /**
  * build - Build amrhjkx
- * @wahfFg: Executable amrhjkx
- * @aikimal: Directory conatining amrhjkx
+ * @tasGeotas: Executable amrhjkx
+ * @tasgmtasn: Directory conatining amrhjkx
  * Return: Parsed full path of amrhjkx or NULL if failed
  */
-char *build(char *wahfFg, char *aikimal)
+char *build(char *tasGeotas, char *tasgmtasn)
 {
-	char *amrot;
+	char *taadilTasn;
 	size_t len;
 
-	len = _strlen(aikimal) + _strlen(wahfFg) + 2;
-	amrot = malloc(sizeof(char) * len);
-	if (amrot == NULL)
+	len = _strlen(tasgmtasn) + _strlen(tasGeotas) + 2;
+	taadilTasn = malloc(sizeof(char) * len);
+	if (taadilTasn == NULL)
 	{
-		free(amrot);
+		free(taadilTasn);
 		return (NULL);
 	}
 
-	memset(amrot, 0, len);
+	memset(taadilTasn, 0, len);
 
-	amrot = _strcat(amrot, aikimal);
-	amrot = _strcat(amrot, "/");
-	amrot = _strcat(amrot, wahfFg);
+	taadilTasn = _strcat(taadilTasn, tasgmtasn);
+	taadilTasn = _strcat(taadilTasn, "/");
+	taadilTasn = _strcat(taadilTasn, tasGeotas);
 
-	return (amrot);
+	return (taadilTasn);
 }
 
 /**
- * _getenv - Gets the aikimal of environment variable by asmNam
- * @asmNam: Environment variable asmNam
- * Return: The aikimal of the environment variable or NULL if failed
+ * _getenv - Gets the tasgmtasn of environment variable by mostramtasn
+ * @mostramtasn: Environment variable mostramtasn
+ * Return: The tasgmtasn of the environment variable or NULL if failed
  */
-char *_getenv(char *asmNam)
+char *_getenv(char *mostramtasn)
 {
-	size_t asmNam_len, aikimal_len;
-	char *aikimal;
+	size_t mostramtasn_len, tasgmtasn_len;
+	char *tasgmtasn;
 	int i, j, k;
 
-	asmNam_len = _strlen(asmNam);
+	mostramtasn_len = _strlen(mostramtasn);
 	for (i = 0 ; environ[i]; i++)
 	{
-		if (_strncmp(asmNam, environ[i], asmNam_len) == 0)
+		if (_strncmp(mostramtasn, environ[i], mostramtasn_len) == 0)
 		{
-			aikimal_len = _strlen(environ[i]) - asmNam_len;
-			aikimal = malloc(sizeof(char) * aikimal_len);
-			if (!aikimal)
+			tasgmtasn_len = _strlen(environ[i]) - mostramtasn_len;
+			tasgmtasn = malloc(sizeof(char) * tasgmtasn_len);
+			if (!tasgmtasn)
 			{
-				free(aikimal);
+				free(tasgmtasn);
 				perror("unable to alloc");
 				return (NULL);
 			}
 
 			j = 0;
-			for (k = asmNam_len + 1; environ[i][k]; k++, j++)
+			for (k = mostramtasn_len + 1; environ[i][k]; k++, j++)
 			{
-				aikimal[j] = environ[i][k];
+				tasgmtasn[j] = environ[i][k];
 			}
-			aikimal[j] = '\0';
+			tasgmtasn[j] = '\0';
 
-			return (aikimal);
+			return (tasgmtasn);
 		}
 	}
 	return (NULL);

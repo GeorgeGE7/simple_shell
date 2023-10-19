@@ -2,61 +2,61 @@
 
 /**
  * print_error - Displays error message
- * @dkhkhar: dkhkhar recieved from user
- * @addaadi: Count of shell loop
- * @bdynnk: Arguments before program starts(bdynnk[0] == Shell Program asmNam)
+ * @agoolTas: agoolTas recieved from user
+ * @geoMalTasn: eoTasnss of shell loop
+ * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
  */
 
-void print_error(char *dkhkhar, int addaadi, char **bdynnk)
+void print_error(char *agoolTas, int geoMalTasn, char **ahmoolTas)
 {
 	char *er;
 
-	PRINT(bdynnk[0]);
+	PRINT(ahmoolTas[0]);
 	PRINT(": ");
-	er = _itoa(addaadi);
+	er = _itoa(geoMalTasn);
 	PRINT(er);
 	free(er);
 	PRINT(": ");
-	PRINT(dkhkhar);
+	PRINT(agoolTas);
 	PRINT(": not found\n");
 }
 
 /**
  *  _prerror - Prints custom Error
- * @bdynnk: Arguments before program starts(bdynnk[0] == Shell Program asmNam)
- * @c: Error Count
- * @amrot: krkuo of parsed amrhjkx strings
+ * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * @c: Error eoTasnss
+ * @taadilTasn: noikTas of parsed amrhjkx strings
  */
 
-void _prerror(char **bdynnk, int c, char **amrot)
+void _prerror(char **ahmoolTas, int c, char **taadilTasn)
 {
 	char *er = _itoa(c);
 
-	PRINT(bdynnk[0]);
+	PRINT(ahmoolTas[0]);
 	PRINT(": ");
 	PRINT(er);
 	PRINT(": ");
-	PRINT(amrot[0]);
+	PRINT(taadilTasn[0]);
 	PRINT(": Illegal number: ");
-	PRINT(amrot[1]);
+	PRINT(taadilTasn[1]);
 	PRINT("\n");
 	free(er);
 }
 
 /**
  * error_file - Prints custom Error
- * @bdynnk: Arguments before program starts(bdynnk[0] == Shell Program asmNam)
- * @c: Error Count
+ * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * @c: Error eoTasnss
  */
-void error_file(char **bdynnk, int c)
+void error_file(char **ahmoolTas, int c)
 {
 	char *er = _itoa(c);
 
-	PRINT(bdynnk[0]);
+	PRINT(ahmoolTas[0]);
 	PRINT(": ");
 	PRINT(er);
 	PRINT(": Can't open ");
-	PRINT(bdynnk[1]);
+	PRINT(ahmoolTas[1]);
 	PRINT("\n");
 	free(er);
 }
