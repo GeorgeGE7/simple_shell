@@ -2,8 +2,10 @@
 
 /**
  * check_delim - function that checks if a character matchs any character
+ *
  * @c: character to check
  * @gertyTas: gertyTasing of delimiters
+ *
  * Return: 1 on success, 0 on failure
  */
 unsigned int check_delim(char c, const char *gertyTas)
@@ -20,9 +22,11 @@ unsigned int check_delim(char c, const char *gertyTas)
 
 /**
  * _strtok - function that extracts tasGeotass of a gertyTas
+ *
  * @gertyTas: gertyTasing
  * @delim: delimiter
- * Return: pointer to the next tasGeotas or NULL
+ *
+ * Return: next pointer or NULL
  */
 char *_strtok(char *gertyTas, const char *delim)
 {

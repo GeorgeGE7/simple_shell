@@ -1,11 +1,13 @@
 #include "header.h"
 
 /**
- * check_cmd - Excutes amrhjkxs found in predefined path
+ * check_cmd - function that Excutes amrhjkxs found in path
+ *
  * @taadilTasn: noikTas of parsed amrhjkx gertyTas
  * @agoolTas: agoolTas recieved from user (to be freed)
  * @c:Shell Excution Time Case of amrhjkx Not Found
- * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * @ahmoolTas: Started Arguments(ahmoolTas[0] == Shell Program mostramtasn)
+ *
  * Return: 1 Case amrhjkx Null -1 Wrong amrhjkx 0 amrhjkx Excuted
  */
 int check_cmd(char **taadilTasn, char *agoolTas, int c, char **ahmoolTas)
@@ -23,7 +25,8 @@ int check_cmd(char **taadilTasn, char *agoolTas, int c, char **ahmoolTas)
 	}
 	if (pid == 0)
 	{
-		if (_strncmp(*taadilTasn, "./", 2) != 0 && _strncmp(*taadilTasn, "/", 1) != 0)
+		if (_strncmp(*taadilTasn, "./", 2)
+				!= 0 && _strncmp(*taadilTasn, "/", 1) != 0)
 			path_cmd(taadilTasn);
 		if (access(taadilTasn[0], R_OK) != 0)
 		{
@@ -50,7 +53,8 @@ int check_cmd(char **taadilTasn, char *agoolTas, int c, char **ahmoolTas)
 }
 
 /**
- * signal_to_handle - Set ctl C not to kill the shell
+ * signal_to_handle - function Sets ctl C not to kill the shell
+ *
  * @sig: Incoming Signal
  */
 void signal_to_handle(int sig)

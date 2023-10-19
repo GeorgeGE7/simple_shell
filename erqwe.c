@@ -1,10 +1,11 @@
 #include "header.h"
 
 /**
- * print_error - Displays error message
+ * print_error - function that Displays error message
+ *
  * @agoolTas: agoolTas recieved from user
  * @geoMalTasn: eoTasnss of shell loop
- * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * @ahmoolTas: Start Arguments (ahmoolTas[0] == Shell Program mostramtasn)
  */
 
 void print_error(char *agoolTas, int geoMalTasn, char **ahmoolTas)
@@ -22,8 +23,9 @@ void print_error(char *agoolTas, int geoMalTasn, char **ahmoolTas)
 }
 
 /**
- *  _prerror - Prints custom Error
- * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * _prerror - function that Prints custom Error
+ *
+ * @ahmoolTas: start Arguments (ahmoolTas[0] == Shell Program mostramtasn)
  * @c: Error eoTasnss
  * @taadilTasn: noikTas of parsed amrhjkx strings
  */
@@ -44,8 +46,9 @@ void _prerror(char **ahmoolTas, int c, char **taadilTasn)
 }
 
 /**
- * error_file - Prints custom Error
- * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * error_file - function that Prints custom Error
+ *
+ * @ahmoolTas: start Arguments (ahmoolTas[0] == Shell Program mostramtasn)
  * @c: Error eoTasnss
  */
 void error_file(char **ahmoolTas, int c)

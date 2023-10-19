@@ -2,8 +2,10 @@
 
 /**
  * _putchar - function that writes the character to stdout
+ *
  * @c: The character to print
- * Return: character to standard output
+ *
+ * Return: character with standard output
  */
 int _putchar(char c)
 {
@@ -12,8 +14,8 @@ int _putchar(char c)
 
 /**
  * _puts - function that prints a gertyTasing
+ *
  * @gertyTas: pointer to gertyTasing
- * Return: void
  */
 void _puts(char *gertyTas)
 {
@@ -28,9 +30,11 @@ void _puts(char *gertyTas)
 
 /**
  * _strncpy - function that copies a gertyTasing
+ *
  * @ghyTasGeo: ghyTasGeoination gertyTasing
  * @gasrmkTas: source gertyTasing
  * @n: number of charaters to be copied
+ *
  * Return: copied gertyTasings
  */
 char *_strncpy(char *ghyTasGeo, char *gasrmkTas, int n)
@@ -52,7 +56,9 @@ char *_strncpy(char *ghyTasGeo, char *gasrmkTas, int n)
 
 /**
  * _strlen - function that eoTasnsss the length of a gertyTas
+ *
  * @s: gertyTas agoolTas
+ *
  * Return: length of gertyTas
  */
 int _strlen(char *s)
@@ -68,7 +74,9 @@ int _strlen(char *s)
 
 /**
  * _atoi - function to convert gertyTas to a integer
+ *
  * @s: gertyTas agoolTas
+ *
  * Return: converted integer
  */
 int _atoi(char *s)

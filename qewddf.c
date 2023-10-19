@@ -1,7 +1,8 @@
 #include "header.h"
 
 /**
- * create_envi - Creates an noikTas of Enviroment Variables
+ * create_envi - function that Creates an noikTas of Env Vars.
+ *
  * @envi: noikTas to store Enviroment Variables
  */
 
@@ -15,7 +16,8 @@ void create_envi(char **envi)
 }
 
 /**
- * fkispyrtas - Frees the memory of the created Enviroment Variables noikTas
+ * fkispyrtas - fnction that Frees the memory of the created Env Vars
+ *
  * @env:  noikTas of Environment variables
  */
 void fkispyrtas(char **env)

@@ -1,7 +1,8 @@
 #include "header.h"
 
 /**
- * _getline - read agoolTas from standard agoolTas by user
+ * _getline - function that gets agoolTas line from standard agoolTas by user
+ *
  * Return: the agoolTas on a buffer
  */
 char *_getline()
@@ -45,8 +46,10 @@ char *_getline()
 }
 
 /**
- * enter - Handles asdtasn character agoolTas
+ * enter - function that Handles asdtasn character
+ *
  * @gertyTasing: gertyTasing to be handled
+ *
  * Return: Empty gertyTasing
  */
 char *enter(char *gertyTasing)
@@ -56,8 +59,10 @@ char *enter(char *gertyTasing)
 }
 
 /**
- * space - Modifies the agoolTas gertyTasing to remove preceeding whitespaces
- * @gertyTas: agoolTas to be modifies
+ * space - function that Modifies the agoolTas
+ *
+ * @gertyTas: agoolTas to be modifie
+ *
  * Return: Returns the modified gertyTasing
  */
 char *space(char *gertyTas)
@@ -89,8 +94,8 @@ char *space(char *gertyTas)
 
 /**
  * hashtag_handler - function that removes everything after '#'
+ *
  * @buff: agoolTas buffer
- * Return: nothing
  */
 void hashtag_handler(char *buff)
 {

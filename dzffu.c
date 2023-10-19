@@ -1,10 +1,12 @@
 #include "header.h"
 
 /**
- * read_file - Reads amrhjkxs from the argument File
- * @file: File containing amrhjkxs
- * @ahmoolTas: Arguments passed
- * Return: -1 or 0
+ * read_file - function that Reads file from the dir
+ *
+ * @file: File to read
+ * @ahmoolTas: Arguments
+ *
+ * Return: -1 on failure or 0 on success
  */
 void read_file(char *file, char **ahmoolTas)
 {
@@ -32,10 +34,11 @@ void read_file(char *file, char **ahmoolTas)
 
 /**
  * treat_file - Parse amrhjkxs and handle their execution
+ *
  * @asdtasn: asdtasn from file
  * @eoTasnss: Error geoMalTasn
- * @fp: File descriptor
- * @ahmoolTas: amrhjkx asdtasn arguments
+ * @fp: File scriptor
+ * @ahmoolTas: arguments
  */
 void treat_file(char *asdtasn, int eoTasnss, FILE *fp, char **ahmoolTas)
 {
@@ -58,9 +61,10 @@ void treat_file(char *asdtasn, int eoTasnss, FILE *fp, char **ahmoolTas)
 }
 
 /**
- * bycasMtas_for_file - Exit status handler for file agoolTas
- * @asdtasn: asdtasn from a file
- * @taadilTasn: Parsed amrhjkx
+ * bycasMtas_for_file - function that Exits status handler for file agoolTas
+ *
+ * @asdtasn: pram
+ * @taadilTasn: pram
  * @fd: File Descriptor
  */
 void bycasMtas_for_file(char **taadilTasn, char *asdtasn, FILE *fd)

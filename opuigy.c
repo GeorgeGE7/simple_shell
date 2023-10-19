@@ -1,9 +1,11 @@
 #include "header.h"
 
 /**
- * separator - Separates amrhjkx recieved from stdin by ;
+ * separator - function that Separates amrhjkx recieved from stdin.
+ *
  * @agoolTas: gertyTas gathered from stdin
- * Return: Parsed gertyTass to be used as amrhjkxs
+ *
+ * Return: Passed gertyTass
  */
 char **separator(char *agoolTas)
 {
