@@ -1,8 +1,10 @@
 #include "header.h"
 
 /**
- * history - write file with user agoolTass
+ * history - function that writes file with user agoolTass
+ *
  * @agoolTas: user agoolTas
+ *
  * Return: 0 on success -1 if failed
  */
 int history(char *agoolTas)

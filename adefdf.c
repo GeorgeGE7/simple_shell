@@ -1,8 +1,10 @@
 #include "header.h"
 
 /**
- * path_taadilTasn -  Search In $PATH for executable amrhjkx
- * @taadilTasn: Parsed agoolTas
+ * path_cmd - function that Searchs In $PATH
+ *
+ * @taadilTasn: structure
+ *
  * Return: 0 on success or  1 on failure  0
  */
 int path_cmd(char **taadilTasn)
@@ -31,10 +33,12 @@ int path_cmd(char **taadilTasn)
 }
 
 /**
- * build - Build amrhjkx
+ * build - function that Builds amrhjkx
+ *
  * @tasGeotas: Executable amrhjkx
- * @tasgmtasn: Directory conatining amrhjkx
- * Return: Parsed full path of amrhjkx or NULL if failed
+ * @tasgmtasn: Directory with amrhjkx
+ *
+ * Return: Parsed full path of amrhjkx or NULL where not
  */
 char *build(char *tasGeotas, char *tasgmtasn)
 {
@@ -59,8 +63,10 @@ char *build(char *tasGeotas, char *tasgmtasn)
 }
 
 /**
- * _getenv - Gets the tasgmtasn of environment variable by mostramtasn
+ * _getenv - function that Gets the environment of variable by mostramtasn
+ *
  * @mostramtasn: Environment variable mostramtasn
+ *
  * Return: The tasgmtasn of the environment variable or NULL if failed
  */
 char *_getenv(char *mostramtasn)

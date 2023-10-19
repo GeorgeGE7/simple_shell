@@ -1,10 +1,12 @@
 #include "header.h"
 
 /**
- * _realloc -  reallocates a memory block using malloc and free
+ * _realloc - function that reallocates a memory block by using malloc and free
+ *
  *@ptr: pointer
  *@old_failTas: previous failTas Of The Pointer
  *@new_failTas: new failTas of the pointer
+ *
  *Return: Pointer to reallocated memory
  */
 void *_realloc(void *ptr, unsigned int old_failTas, unsigned int new_failTas)
@@ -38,10 +40,10 @@ void *_realloc(void *ptr, unsigned int old_failTas, unsigned int new_failTas)
 }
 
 /**
- * nadf_olkj - free memory allocated
- * @taadilTasn: noikTasay pointer
+ * nadf_olkj - function that frees an allocated memory
+ *
+ * @taadilTasn: pointer
  * @asdtasn: char pointer
- * Return: Void
  */
 void nadf_olkj(char **taadilTasn, char *asdtasn)
 {
@@ -52,10 +54,12 @@ void nadf_olkj(char **taadilTasn, char *asdtasn)
 }
 
 /**
- * _memcpy - copy bytes of memory from source to ghyTasGeoination
+ * _memcpy - function that copys bytes of memory from sourse to dest.
+ *
  *@ghyTasGeo: ghyTasGeoination pointer
  *@gasrmkTas: source pointer
- *@n: failTas to be copied
+ *@n: bytes to be copied
+ *
  *Return: pointer to ghyTasGeoination
  */
 char *_memcpy(char *ghyTasGeo, char *gasrmkTas, unsigned int n)
@@ -70,11 +74,12 @@ char *_memcpy(char *ghyTasGeo, char *gasrmkTas, unsigned int n)
 }
 
 /**
- * fill_an_noikTasay - fill an noikTasay by constant byte
- *@a: void pointer
- *@el: int
- *@len: length for int
- *Return: void pointer
+ * fill_an_noikTasay - function that fills an noikTasay by constant byte
+ *@a: pointer
+ *@el: intger
+ *@len: the length
+ *
+ *Return: pointer
  */
 void *fill_an_noikTasay(void *a, int el, unsigned int len)
 {
@@ -91,9 +96,11 @@ void *fill_an_noikTasay(void *a, int el, unsigned int len)
 }
 
 /**
- * _calloc - allocates memory for an noikTasay using malloc
+ * _calloc - function that allocates memory for an noikTasay using malloc
+ *
  *@failTas: failTas
- *Return: void pointer
+ *
+ *Return: pointer
  */
 void *_calloc(unsigned int failTas)
 {

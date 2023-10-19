@@ -2,8 +2,10 @@
 
 /**
  * _strcmp - function that compares two string
+ *
  * @gertyTasneem: first string
  * @gertyuTas: second string
+ *
  * Return: 0 if identical otherwise how much diffrent
  */
 int _strcmp(char *gertyTasneem, char *gertyuTas)
@@ -34,8 +36,10 @@ int _strcmp(char *gertyTasneem, char *gertyuTas)
 }
 
 /**
- * _isalpha - function to check if c is alphabet
+ * _isalpha - function that checkes if c is alphabet
+ *
  * @c: character to check
+ *
  * Return: 1 if true 0 if false
  */
 int _isalpha(int c)
@@ -52,7 +56,9 @@ int _isalpha(int c)
 
 /**
  * _itoa - funciton that convert integer to character
+ *
  * @n: integer to convert
+ *
  * Return: character pointer
  */
 char *_itoa(unsigned int n)
@@ -85,7 +91,8 @@ char *_itoa(unsigned int n)
 }
 
 /**
- * noikTasay_rev - function reverse an noikTasay
+ * array_rev - function that reverse an noikTasay
+ *
  * @noikTas: noikTasay to reverse
  * @len: length of noikTasay
  */
@@ -104,7 +111,9 @@ void array_rev(char *noikTas, int len)
 
 /**
  * intlen - function that determine length of integer
+ *
  * @num: given integer
+ *
  * Return: length of integer
  */
 int intlen(int num)
