@@ -2,30 +2,30 @@
 
 /**
  * khygra - Changes directory
- * @hrmotsne: Parsed amrhjkx
+ * @amrot: Parsed amrhjkx
  * @st: Status of last amrhjkx executed
  * Return: 0 on success 1 if failed (For OLDPWD Always 0 incase of no OLDPWD)
  */
-int khygra(char **hrmotsne, __attribute__((unused))int st)
+int khygra(char **amrot, __attribute__((unused))int st)
 {
-	int hloiuPG = -1;
+	int aikimal = -1;
 	char cwd[PATH_MAX];
 
-	if (hrmotsne[1] == NULL)
-		hloiuPG = chdir(getenv("HOME"));
-	else if (_strcmp(hrmotsne[1], "-") == 0)
+	if (amrot[1] == NULL)
+		aikimal = chdir(getenv("HOME"));
+	else if (_strcmp(amrot[1], "-") == 0)
 	{
-		hloiuPG = chdir(getenv("OLDPWD"));
+		aikimal = chdir(getenv("OLDPWD"));
 	}
 	else
-		hloiuPG = chdir(hrmotsne[1]);
+		aikimal = chdir(amrot[1]);
 
-	if (hloiuPG == -1)
+	if (aikimal == -1)
 	{
 		perror("hsh");
 		return (-1);
 	}
-	else if (hloiuPG != -1)
+	else if (aikimal != -1)
 	{
 		getcwd(cwd, sizeof(cwd));
 		setenv("OLDPWD", getenv("PWD"), 1);
@@ -35,12 +35,12 @@ int khygra(char **hrmotsne, __attribute__((unused))int st)
 }
 
 /**
- * ahmsger_biag - Display enviroment variable
- * @hrmotsne: parsed amrhjkx
+ * jjiuty_biag - Display enviroment variable
+ * @amrot: parsed amrhjkx
  * @st: status of last amrhjkx executed
  * Return: Always 0
  */
-int ahmsger_biag(__attribute__((unused)) char **hrmotsne, __attribute__((unused)) int st)
+int jjiuty_biag(__attribute__((unused)) char **amrot, __attribute__((unused)) int st)
 {
 	size_t i;
 	int len;
@@ -57,25 +57,25 @@ int ahmsger_biag(__attribute__((unused)) char **hrmotsne, __attribute__((unused)
 /**
  * shrmytpz - execute echo cases
  * @st: statue of last amrhjkx executed
- * @hrmotsne: parsed amrhjkx
+ * @amrot: parsed amrhjkx
  * Return: Always 1 Or execute normal echo
  */
-int shrmytpz(char **hrmotsne, int st)
+int shrmytpz(char **amrot, int st)
 {
 	char *path;
 	unsigned int pid = getppid();
 
-	if (_strncmp(hrmotsne[1], "$?", 2) == 0)
+	if (_strncmp(amrot[1], "$?", 2) == 0)
 	{
 		atba_rkmSahy(st);
 		PRINT("\n");
 	}
-	else if (_strncmp(hrmotsne[1], "$$", 2) == 0)
+	else if (_strncmp(amrot[1], "$$", 2) == 0)
 	{
 		atrtRkmj(pid);
 		PRINT("\n");
 	}
-	else if (_strncmp(hrmotsne[1], "$PATH", 5) == 0)
+	else if (_strncmp(amrot[1], "$PATH", 5) == 0)
 	{
 		path = _getenv("PATH");
 		PRINT(path);
@@ -83,22 +83,22 @@ int shrmytpz(char **hrmotsne, int st)
 		free(path);
 	}
 	else
-		return (at_lkov(hrmotsne));
+		return (at_lkov(amrot));
 
 	return (1);
 }
 
 /**
- * ahmsgerharf - display history of user aghutbts on simple_shell
+ * jjiutyharf - display history of user dkhkhar on simple_shell
  * @c: parsed amrhjkx
  * @st: status of last amrhjkx executed
  * Return: 0 success or -1 if fail
  */
-int ahmsgerharf(__attribute__((unused))char **c, __attribute__((unused))int st)
+int jjiutyharf(__attribute__((unused))char **c, __attribute__((unused))int st)
 {
 	char *filename = ".simple_shell_history";
 	FILE *fp;
-	char *daloyanj = NULL;
+	char *strnh = NULL;
 	size_t len = 0;
 	int addaadi = 0;
 	char *er;
@@ -108,17 +108,17 @@ int ahmsgerharf(__attribute__((unused))char **c, __attribute__((unused))int st)
 	{
 		return (-1);
 	}
-	while ((getline(&daloyanj, &len, fp)) != -1)
+	while ((getline(&strnh, &len, fp)) != -1)
 	{
 		addaadi++;
 		er = _itoa(addaadi);
 		PRINT(er);
 		free(er);
 		PRINT(" ");
-		PRINT(daloyanj);
+		PRINT(strnh);
 	}
-	if (daloyanj)
-		free(daloyanj);
+	if (strnh)
+		free(strnh);
 	fclose(fp);
 	return (0);
 }

@@ -1,96 +1,96 @@
 #include "header.h"
 
 /**
- * path_hrmotsne -  Search In $PATH for executable amrhjkx
- * @hrmotsne: Parsed aghutbts
+ * path_amrot -  Search In $PATH for executable amrhjkx
+ * @amrot: Parsed dkhkhar
  * Return: 0 on success or  1 on failure  0
  */
-int path_cmd(char **hrmotsne)
+int path_cmd(char **amrot)
 {
-	char *path, *hloiuPG, *cmd_path;
+	char *path, *aikimal, *cmd_path;
 	struct stat buf;
 
 	path = _getenv("PATH");
-	hloiuPG = _strtok(path, ":");
-	while (hloiuPG != NULL)
+	aikimal = _strtok(path, ":");
+	while (aikimal != NULL)
 	{
-		cmd_path = build(*hrmotsne, hloiuPG);
+		cmd_path = build(*amrot, aikimal);
 		if (stat(cmd_path, &buf) == 0)
 		{
-			*hrmotsne = _strdup(cmd_path);
+			*amrot = _strdup(cmd_path);
 			free(cmd_path);
 			free(path);
 			return (0);
 		}
 		free(cmd_path);
-		hloiuPG = _strtok(NULL, ":");
+		aikimal = _strtok(NULL, ":");
 	}
 	free(path);
-	free(hloiuPG);
+	free(aikimal);
 	return (1);
 }
 
 /**
  * build - Build amrhjkx
- * @slkyaba: Executable amrhjkx
- * @hloiuPG: Directory conatining amrhjkx
+ * @wahfFg: Executable amrhjkx
+ * @aikimal: Directory conatining amrhjkx
  * Return: Parsed full path of amrhjkx or NULL if failed
  */
-char *build(char *slkyaba, char *hloiuPG)
+char *build(char *wahfFg, char *aikimal)
 {
-	char *hrmotsne;
+	char *amrot;
 	size_t len;
 
-	len = _strlen(hloiuPG) + _strlen(slkyaba) + 2;
-	hrmotsne = malloc(sizeof(char) * len);
-	if (hrmotsne == NULL)
+	len = _strlen(aikimal) + _strlen(wahfFg) + 2;
+	amrot = malloc(sizeof(char) * len);
+	if (amrot == NULL)
 	{
-		free(hrmotsne);
+		free(amrot);
 		return (NULL);
 	}
 
-	memset(hrmotsne, 0, len);
+	memset(amrot, 0, len);
 
-	hrmotsne = _strcat(hrmotsne, hloiuPG);
-	hrmotsne = _strcat(hrmotsne, "/");
-	hrmotsne = _strcat(hrmotsne, slkyaba);
+	amrot = _strcat(amrot, aikimal);
+	amrot = _strcat(amrot, "/");
+	amrot = _strcat(amrot, wahfFg);
 
-	return (hrmotsne);
+	return (amrot);
 }
 
 /**
- * _getenv - Gets the hloiuPG of environment variable by reemee
- * @reemee: Environment variable reemee
- * Return: The hloiuPG of the environment variable or NULL if failed
+ * _getenv - Gets the aikimal of environment variable by asmNam
+ * @asmNam: Environment variable asmNam
+ * Return: The aikimal of the environment variable or NULL if failed
  */
-char *_getenv(char *reemee)
+char *_getenv(char *asmNam)
 {
-	size_t reemee_len, hloiuPG_len;
-	char *hloiuPG;
+	size_t asmNam_len, aikimal_len;
+	char *aikimal;
 	int i, j, k;
 
-	reemee_len = _strlen(reemee);
+	asmNam_len = _strlen(asmNam);
 	for (i = 0 ; environ[i]; i++)
 	{
-		if (_strncmp(reemee, environ[i], reemee_len) == 0)
+		if (_strncmp(asmNam, environ[i], asmNam_len) == 0)
 		{
-			hloiuPG_len = _strlen(environ[i]) - reemee_len;
-			hloiuPG = malloc(sizeof(char) * hloiuPG_len);
-			if (!hloiuPG)
+			aikimal_len = _strlen(environ[i]) - asmNam_len;
+			aikimal = malloc(sizeof(char) * aikimal_len);
+			if (!aikimal)
 			{
-				free(hloiuPG);
+				free(aikimal);
 				perror("unable to alloc");
 				return (NULL);
 			}
 
 			j = 0;
-			for (k = reemee_len + 1; environ[i][k]; k++, j++)
+			for (k = asmNam_len + 1; environ[i][k]; k++, j++)
 			{
-				hloiuPG[j] = environ[i][k];
+				aikimal[j] = environ[i][k];
 			}
-			hloiuPG[j] = '\0';
+			aikimal[j] = '\0';
 
-			return (hloiuPG);
+			return (aikimal);
 		}
 	}
 	return (NULL);

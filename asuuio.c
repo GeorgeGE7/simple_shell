@@ -2,19 +2,19 @@
 
 /**
  * parse_cmd - Parses the amrhjkx recieved from stdin
- * @aghutbts: String gathered from stdin
+ * @dkhkhar: String gathered from stdin
  * Return: Parsed strings to be used as arguments
  */
-char **parse_cmd(char *aghutbts)
+char **parse_cmd(char *dkhkhar)
 {
 	char **arguments;
 	char *argument;
 	int i;
 	int buffsize = BUFSIZE;
 
-	if (aghutbts[0] == ' ' && aghutbts[_strlen(aghutbts)] == ' ')
+	if (dkhkhar[0] == ' ' && dkhkhar[_strlen(dkhkhar)] == ' ')
 		exit(0);
-	if (aghutbts == NULL)
+	if (dkhkhar == NULL)
 		return (NULL);
 	arguments = malloc(sizeof(char *) * buffsize);
 	if (!arguments)
@@ -23,7 +23,7 @@ char **parse_cmd(char *aghutbts)
 		perror("hsh");
 		return (NULL);
 	}
-	argument = _strtok(aghutbts, "\n\t\r\a ");
+	argument = _strtok(dkhkhar, "\n\t\r\a ");
 	for (i = 0; argument; i++)
 	{
 		arguments[i] = argument;

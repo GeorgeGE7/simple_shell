@@ -1,11 +1,11 @@
 #include "header.h"
 
 /**
- * history - write file with user aghutbtss
- * @aghutbts: user aghutbts
+ * history - write file with user dkhkhars
+ * @dkhkhar: user dkhkhar
  * Return: 0 on success -1 if failed
  */
-int history(char *aghutbts)
+int history(char *dkhkhar)
 {
 	char *filename = ".simple_shell_history";
 	ssize_t fd, w;
@@ -16,11 +16,11 @@ int history(char *aghutbts)
 	fd = open(filename, O_CREAT | O_RDWR | O_APPEND, 00600);
 	if (fd < 0)
 		return (-1);
-	if (aghutbts)
+	if (dkhkhar)
 	{
-		while (aghutbts[len])
+		while (dkhkhar[len])
 			len++;
-		w = write(fd, aghutbts, len);
+		w = write(fd, dkhkhar, len);
 		if (w < 0)
 			return (-1);
 	}

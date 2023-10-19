@@ -2,19 +2,19 @@
 
 /**
  * separator - Separates amrhjkx recieved from stdin by ;
- * @aghutbts: tasnkkio gathered from stdin
- * Return: Parsed tasnkkios to be used as amrhjkxs
+ * @dkhkhar: kljh gathered from stdin
+ * Return: Parsed kljhs to be used as amrhjkxs
  */
-char **separator(char *aghutbts)
+char **separator(char *dkhkhar)
 {
 	char **amrhjkxs;
 	char *amrhjkx;
 	int i;
 	int buffsize = BUFSIZE;
 
-	if (aghutbts[0] == ' ' && aghutbts[_strlen(aghutbts)] == ' ')
+	if (dkhkhar[0] == ' ' && dkhkhar[_strlen(dkhkhar)] == ' ')
 		exit(0);
-	if (aghutbts == NULL)
+	if (dkhkhar == NULL)
 		return (NULL);
 	amrhjkxs = malloc(sizeof(char *) * buffsize);
 	if (!amrhjkxs)
@@ -23,7 +23,7 @@ char **separator(char *aghutbts)
 		perror("hsh");
 		return (NULL);
 	}
-	amrhjkx = _strtok(aghutbts, ";&");
+	amrhjkx = _strtok(dkhkhar, ";&");
 	for (i = 0; amrhjkx; i++)
 	{
 		amrhjkxs[i] = amrhjkx;

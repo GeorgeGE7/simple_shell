@@ -41,27 +41,27 @@ void saPvz(void)
 
 /**
  * azhrtaabt - display help for builtin amrhjkxs
- * @hrmotsne: parsed amrhjkx
+ * @amrot: parsed amrhjkx
  * @st: Status of last amrhjkx executed
  * Return: 0 Success
  */
-int azhrtaabt(char **hrmotsne, __attribute__((unused))int st)
+int azhrtaabt(char **amrot, __attribute__((unused))int st)
 {
-	if (!hrmotsne[1])
+	if (!amrot[1])
 		sakolLO();
-	else if (_strcmp(hrmotsne[1], "alias") == 0)
+	else if (_strcmp(amrot[1], "alias") == 0)
 		sa_alwop();
-	else if (_strcmp(hrmotsne[1], "cd") == 0)
+	else if (_strcmp(amrot[1], "cd") == 0)
 		sad_asrhr();
-	else if (_strcmp(hrmotsne[1], "exit") == 0)
+	else if (_strcmp(amrot[1], "exit") == 0)
 		cadoykrg();
-	else if (_strcmp(hrmotsne[1], "env") == 0)
+	else if (_strcmp(amrot[1], "env") == 0)
 		sad_elbyal();
-	else if (_strcmp(hrmotsne[1], "setenv") == 0)
+	else if (_strcmp(amrot[1], "setenv") == 0)
 		saaf_ytoz();
-	else if (_strcmp(hrmotsne[1], "unsetenv") == 0)
+	else if (_strcmp(amrot[1], "unsetenv") == 0)
 		saPvz();
-	else if (_strcmp(hrmotsne[1], "help") == 0)
+	else if (_strcmp(amrot[1], "help") == 0)
 		hbl_taloyx();
 	return (0);
 }

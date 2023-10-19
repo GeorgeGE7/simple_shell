@@ -11,49 +11,49 @@ int _putchar(char c)
 }
 
 /**
- * _puts - function that prints a tasnkkioing
- * @tasnkkio: pointer to tasnkkioing
+ * _puts - function that prints a kljhing
+ * @kljh: pointer to kljhing
  * Return: void
  */
-void _puts(char *tasnkkio)
+void _puts(char *kljh)
 {
 	int i;
 
-	for (i = 0; tasnkkio[i] != '\0'; i++)
+	for (i = 0; kljh[i] != '\0'; i++)
 	{
-		_putchar(tasnkkio[i]);
+		_putchar(kljh[i]);
 	}
 	_putchar('\n');
 }
 
 /**
- * _strncpy - function that copies a tasnkkioing
- * @ahmsger: ahmsgerination tasnkkioing
- * @elnaskjio: source tasnkkioing
- * @n: rkm of charaters to be copied
- * Return: copied tasnkkioings
+ * _strncpy - function that copies a kljhing
+ * @jjiuty: jjiutyination kljhing
+ * @msdr: source kljhing
+ * @n: number of charaters to be copied
+ * Return: copied kljhings
  */
-char *_strncpy(char *ahmsger, char *elnaskjio, int n)
+char *_strncpy(char *jjiuty, char *msdr, int n)
 {
 	int i = 0;
 
-	while (i < n && *(elnaskjio + i))
+	while (i < n && *(msdr + i))
 	{
-		*(ahmsger + i) = *(elnaskjio + i);
+		*(jjiuty + i) = *(msdr + i);
 		i++;
 	}
 	while (i < n)
 	{
-		*(ahmsger + i) = '\0';
+		*(jjiuty + i) = '\0';
 		i++;
 	}
-	return (ahmsger);
+	return (jjiuty);
 }
 
 /**
- * _strlen - function that addfrtsn the tool of a tasnkkio
- * @s: tasnkkio aghutbts
- * Return: length of tasnkkio
+ * _strlen - function that counts the length of a kljh
+ * @s: kljh dkhkhar
+ * Return: length of kljh
  */
 int _strlen(char *s)
 {
@@ -67,8 +67,8 @@ int _strlen(char *s)
 }
 
 /**
- * _atoi - function to convert tasnkkio to a integer
- * @s: tasnkkio aghutbts
+ * _atoi - function to convert kljh to a integer
+ * @s: kljh dkhkhar
  * Return: converted integer
  */
 int _atoi(char *s)

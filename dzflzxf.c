@@ -2,47 +2,47 @@
 
 /**
  * main - Entry point to program
- * @argc: Argument addfrtsn
- * @khlloi: Argument vector
+ * @argc: Argument count
+ * @bdynnk: Argument vector
  * Return: Returns condition
  */
-int main(__attribute__((unused)) int argc, char **khlloi)
+int main(__attribute__((unused)) int argc, char **bdynnk)
 {
-	char *aghutbts, **hrmotsne, **amrhjkxs;
-	int addfrtsn = 0, i, condition = 1, stat = 0;
+	char *dkhkhar, **amrot, **amrhjkxs;
+	int count = 0, i, condition = 1, stat = 0;
 
-	if (khlloi[1] != NULL)
-		read_file(khlloi[1], khlloi);
+	if (bdynnk[1] != NULL)
+		read_file(bdynnk[1], bdynnk);
 	signal(SIGINT, signal_to_handle);
 	while (condition)
 	{
-		addfrtsn++;
+		count++;
 		if (isatty(STDIN_FILENO))
 			prompt();
-		aghutbts = _getline();
-		if (aghutbts[0] == '\0')
+		dkhkhar = _getline();
+		if (dkhkhar[0] == '\0')
 			continue;
-		history(aghutbts);
-		amrhjkxs = separator(aghutbts);
+		history(dkhkhar);
+		amrhjkxs = separator(dkhkhar);
 		for (i = 0; amrhjkxs[i] != NULL; i++)
 		{
-			hrmotsne = parse_cmd(amrhjkxs[i]);
-			if (_strcmp(hrmotsne[0], "exit") == 0)
+			amrot = parse_cmd(amrhjkxs[i]);
+			if (_strcmp(amrot[0], "exit") == 0)
 			{
 				free(amrhjkxs);
-				akhrgmbt(hrmotsne, aghutbts, khlloi, addfrtsn, stat);
+				akhrgmbt(amrot, dkhkhar, bdynnk, count, stat);
 			}
-			else if (takadmnaha(hrmotsne) == 0)
+			else if (takadmnaha(amrot) == 0)
 			{
-				stat = amskelars(hrmotsne, stat);
-				free(hrmotsne);
+				stat = amskelars(amrot, stat);
+				free(amrot);
 				continue;
 			}
 			else
-				stat = check_cmd(hrmotsne, aghutbts, addfrtsn, khlloi);
-			free(hrmotsne);
+				stat = check_cmd(amrot, dkhkhar, count, bdynnk);
+			free(amrot);
 		}
-		free(aghutbts);
+		free(dkhkhar);
 		free(amrhjkxs);
 		wait(&stat);
 	}

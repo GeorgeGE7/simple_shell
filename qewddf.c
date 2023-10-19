@@ -1,8 +1,8 @@
 #include "header.h"
 
 /**
- * create_envi - Creates an sydkio of Enviroment Variables
- * @envi: sydkio to store Enviroment Variables
+ * create_envi - Creates an krkuo of Enviroment Variables
+ * @envi: krkuo to store Enviroment Variables
  */
 
 void create_envi(char **envi)
@@ -15,8 +15,8 @@ void create_envi(char **envi)
 }
 
 /**
- * ndf_opbbya - Frees the memory of the created Enviroment Variables sydkio
- * @env:  sydkio of Environment variables
+ * ndf_opbbya - Frees the memory of the created Enviroment Variables krkuo
+ * @env:  krkuo of Environment variables
  */
 void ndf_opbbya(char **env)
 {

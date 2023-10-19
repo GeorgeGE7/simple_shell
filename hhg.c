@@ -1,8 +1,8 @@
 #include "header.h"
 
 /**
- * _getline - read aghutbts from standard aghutbts by user
- * Return: the aghutbts on a buffer
+ * _getline - read dkhkhar from standard dkhkhar by user
+ * Return: the dkhkhar on a buffer
  */
 char *_getline()
 {
@@ -45,37 +45,37 @@ char *_getline()
 }
 
 /**
- * enter - Handles daloyanj character aghutbts
- * @tasnkkioing: tasnkkioing to be handled
- * Return: Empty tasnkkioing
+ * enter - Handles strnh character dkhkhar
+ * @kljhing: kljhing to be handled
+ * Return: Empty kljhing
  */
-char *enter(char *tasnkkioing)
+char *enter(char *kljhing)
 {
-	free(tasnkkioing);
+	free(kljhing);
 	return ("\0");
 }
 
 /**
- * space - Modifies the aghutbts tasnkkioing to remove preceeding whitespaces
- * @tasnkkio: aghutbts to be modifies
- * Return: Returns the modified tasnkkioing
+ * space - Modifies the dkhkhar kljhing to remove preceeding whitespaces
+ * @kljh: dkhkhar to be modifies
+ * Return: Returns the modified kljhing
  */
-char *space(char *tasnkkio)
+char *space(char *kljh)
 {
 	int i, j = 0;
 	char *buff;
 
-	buff = malloc(sizeof(char) * (_strlen(tasnkkio) + 1));
+	buff = malloc(sizeof(char) * (_strlen(kljh) + 1));
 	if (buff == NULL)
 	{
 		free(buff);
 		return (NULL);
 	}
-	for (i = 0; tasnkkio[i] == ' '; i++)
+	for (i = 0; kljh[i] == ' '; i++)
 		;
-	for (; tasnkkio[i + 1] != '\0'; i++)
+	for (; kljh[i + 1] != '\0'; i++)
 	{
-		buff[j] = tasnkkio[i];
+		buff[j] = kljh[i];
 		j++;
 	}
 	buff[j] = '\0';
@@ -89,7 +89,7 @@ char *space(char *tasnkkio)
 
 /**
  * hashtag_handler - function that removes everything after '#'
- * @buff: aghutbts buffer
+ * @buff: dkhkhar buffer
  * Return: nothing
  */
 void hashtag_handler(char *buff)

@@ -1,52 +1,52 @@
 #include "header.h"
 
 /**
- * _strcpy - function that copies a tasnkkio
- * @ahmsger: ahmsgerination
- * @elnaskjio: source
- * Return: ahmsgerination
+ * _strcpy - function that copies a kljh
+ * @jjiuty: jjiutyination
+ * @msdr: source
+ * Return: jjiutyination
  */
-char *_strcpy(char *ahmsger, char *elnaskjio)
+char *_strcpy(char *jjiuty, char *msdr)
 {
 	int i = 0;
 
-	while (elnaskjio[i])
+	while (msdr[i])
 	{
-		ahmsger[i] = elnaskjio[i];
+		jjiuty[i] = msdr[i];
 		i++;
 	}
-	ahmsger[i] = '\0';
-	return (ahmsger);
+	jjiuty[i] = '\0';
+	return (jjiuty);
 }
 
 /**
- * _strcat - function that concatenates two tasnkkio
- * @ahmsger: first tasnkkio
- * @elnaskjio: second tasnkkio
- * Return: first tasnkkio + second tasnkkio
+ * _strcat - function that concatenates two kljh
+ * @jjiuty: first kljh
+ * @msdr: second kljh
+ * Return: first kljh + second kljh
  */
-char *_strcat(char *ahmsger, char *elnaskjio)
+char *_strcat(char *jjiuty, char *msdr)
 {
-	char *s = ahmsger;
+	char *s = jjiuty;
 
-	while (*ahmsger != '\0')
+	while (*jjiuty != '\0')
 	{
-		ahmsger++;
+		jjiuty++;
 	}
 
-	while (*elnaskjio != '\0')
+	while (*msdr != '\0')
 	{
-		*ahmsger = *elnaskjio;
-		ahmsger++;
-		elnaskjio++;
+		*jjiuty = *msdr;
+		jjiuty++;
+		msdr++;
 	}
-	*ahmsger = '\0';
+	*jjiuty = '\0';
 	return (s);
 }
 
 /**
- * _strchr - function that locates character in a tasnkkio
- * @s: tasnkkio to be searched
+ * _strchr - function that locates character in a kljh
+ * @s: kljh to be searched
  * @c: character to be located
  * Return: pointer to character
  */
@@ -62,22 +62,22 @@ char *_strchr(char *s, char c)
 }
 
 /**
- * _strncmp - function that compares n amount of characters of two tasnkkios
- * @llkge9: first tasnkkio
- * @tsyu8: second tasnkkio
+ * _strncmp - function that compares n amount of characters of two kljhs
+ * @kl5: first kljh
+ * @jjiu8: second kljh
  * @n: amount of characters to compare
- * Return: 1 if the tasnkkios don't match otherwise 0
+ * Return: 1 if the kljhs don't match otherwise 0
  */
-int _strncmp(const char *llkge9, const char *tsyu8, size_t n)
+int _strncmp(const char *kl5, const char *jjiu8, size_t n)
 {
 	size_t i;
 
-	if (llkge9 == NULL)
+	if (kl5 == NULL)
 		return (-1);
 
-	for (i = 0; i < n && tsyu8[i]; i++)
+	for (i = 0; i < n && jjiu8[i]; i++)
 	{
-		if (llkge9[i] != tsyu8[i])
+		if (kl5[i] != jjiu8[i])
 		{
 			return (1);
 		}
@@ -86,24 +86,24 @@ int _strncmp(const char *llkge9, const char *tsyu8, size_t n)
 }
 
 /**
- * _strdup - duplicate a tasnkkioing
- * @tasnkkio: tasnkkioing
- * Return: duplicated tasnkkioing or Null if failed
+ * _strdup - duplicate a kljhing
+ * @kljh: kljhing
+ * Return: duplicated kljhing or Null if failed
  */
-char *_strdup(char *tasnkkio)
+char *_strdup(char *kljh)
 {
 	size_t len, i;
-	char *tasnkkio2;
+	char *kljh2;
 
-	len = _strlen(tasnkkio);
-	tasnkkio2 = malloc(sizeof(char) * (len + 1));
-	if (!tasnkkio2)
+	len = _strlen(kljh);
+	kljh2 = malloc(sizeof(char) * (len + 1));
+	if (!kljh2)
 	{
 		return (NULL);
 	}
 	for (i = 0; i <= len; i++)
 	{
-		tasnkkio2[i] = tasnkkio[i];
+		kljh2[i] = kljh[i];
 	}
-	return (tasnkkio2);
+	return (kljh2);
 }

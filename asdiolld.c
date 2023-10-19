@@ -35,10 +35,10 @@ void atba_rkmSahy(int n)
 
 /**
  * at_lkov - Executes built-in echo function
- * @hrmotsne: Parsed amrhjkx
+ * @amrot: Parsed amrhjkx
  * Return: 0 Upon Success -1 Upon Failure
  */
-int at_lkov(char **hrmotsne)
+int at_lkov(char **amrot)
 {
 	pid_t pid;
 	int status;
@@ -46,7 +46,7 @@ int at_lkov(char **hrmotsne)
 	pid = fork();
 	if (pid == 0)
 	{
-		if (execve("/bin/echo", hrmotsne, environ) == -1)
+		if (execve("/bin/echo", amrot, environ) == -1)
 		{
 			return (-1);
 		}
