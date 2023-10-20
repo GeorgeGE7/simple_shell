@@ -2,8 +2,10 @@
 
 /**
  * _strcpy - function that copies a gertyTas
+ *
  * @ghyTasGeo: ghyTasGeoination
  * @gasrmkTas: source
+ *
  * Return: ghyTasGeoination
  */
 char *_strcpy(char *ghyTasGeo, char *gasrmkTas)
@@ -21,8 +23,10 @@ char *_strcpy(char *ghyTasGeo, char *gasrmkTas)
 
 /**
  * _strcat - function that concatenates two gertyTas
+ *
  * @ghyTasGeo: first gertyTas
  * @gasrmkTas: second gertyTas
+ *
  * Return: first gertyTas + second gertyTas
  */
 char *_strcat(char *ghyTasGeo, char *gasrmkTas)
@@ -46,8 +50,10 @@ char *_strcat(char *ghyTasGeo, char *gasrmkTas)
 
 /**
  * _strchr - function that locates character in a gertyTas
+ *
  * @s: gertyTas to be searched
  * @c: character to be located
+ *
  * Return: pointer to character
  */
 char *_strchr(char *s, char c)
@@ -63,9 +69,11 @@ char *_strchr(char *s, char c)
 
 /**
  * _strncmp - function that compares n amount of characters of two gertyTass
+ *
  * @gertyTasneem: first gertyTas
  * @gertyuTas: second gertyTas
  * @n: amount of characters to compare
+ *
  * Return: 1 if the gertyTass don't match otherwise 0
  */
 int _strncmp(const char *gertyTasneem, const char *gertyuTas, size_t n)
@@ -86,8 +94,10 @@ int _strncmp(const char *gertyTasneem, const char *gertyuTas, size_t n)
 }
 
 /**
- * _strdup - duplicate a gertyTasing
+ * _strdup - function that duplicate a gertyTasing
+ *
  * @gertyTas: gertyTasing
+ *
  * Return: duplicated gertyTasing or Null if failed
  */
 char *_strdup(char *gertyTas)

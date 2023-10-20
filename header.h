@@ -87,13 +87,12 @@ int hhitasGtas(char **taadilTasn, __attribute__((unused))int st);
 
 int iuitasGtas(char **taadilTasn);
 int iuitasMtas(char **taadilTasn, int st);
-void bycasMtas(char **taadilTasn, char *agoolTas, char **ahmoolTas, int c, int stat);
+void bycasMtas(char **taadilTasn, char *agoolTasn,
+		char **ahmoolTas, int c, int stat);
 int bycaartas(char **taadilTasn, __attribute__((unused))int st);
-int qzyrtas(__attribute__((unused)) char **taadilTasn,
-	    __attribute__((unused)) int st);
+int qzyrtas(__attribute__((unused)) char **ta, __attribute__((unused)) int st);
 int shimyrtas(char **taadilTasn, int st);
-int laspyrtas(__attribute__((unused))char **c,
-		__attribute__((unused)) int st);
+int laspyrtas(__attribute__((unused))char **c, __attribute__((unused))int st);
 
 /**
  * struct _builtin - Taarif a shiaa ele conatins mabni amrhjkxs

@@ -1,9 +1,11 @@
 #include "header.h"
 
 /**
- * bycaartas - Changes directory
- * @taadilTasn: Parsed amrhjkx
- * @st: Status of last amrhjkx executed
+ * bycaartas - function that Changes directory
+ *
+ * @taadilTasn: Passed amrhjkx
+ * @st: Status of last amrhjkx
+ *
  * Return: 0 on success 1 if failed (For OLDPWD Always 0 incase of no OLDPWD)
  */
 int bycaartas(char **taadilTasn, __attribute__((unused))int st)
@@ -35,12 +37,14 @@ int bycaartas(char **taadilTasn, __attribute__((unused))int st)
 }
 
 /**
- * qzyrtas - Display enviroment variable
- * @taadilTasn: parsed amrhjkx
- * @st: status of last amrhjkx executed
- * Return: Always 0
+ * qzyrtas - function that Displays enviroment variable
+ *
+ * @ta: parsed amrhjkx
+ * @st: status of last amrhjkx
+ *
+ * Return: Always succ 0
  */
-int qzyrtas(__attribute__((unused)) char **taadilTasn, __attribute__((unused)) int st)
+int qzyrtas(__attribute__((unused)) char **ta, __attribute__((unused)) int st)
 {
 	size_t i;
 	int len;
@@ -55,7 +59,8 @@ int qzyrtas(__attribute__((unused)) char **taadilTasn, __attribute__((unused)) i
 }
 
 /**
- * shimyrtas - execute echo cases
+ * shimyrtas - function that executes echo cases
+ *
  * @st: statue of last amrhjkx executed
  * @taadilTasn: parsed amrhjkx
  * Return: Always 1 Or execute normal echo
@@ -89,9 +94,11 @@ int shimyrtas(char **taadilTasn, int st)
 }
 
 /**
- * laspyrtas - display history of user agoolTas on simple_shell
+ * laspyrtas - function that displays history of user agoolTas on simple_shell
+ *
  * @c: parsed amrhjkx
  * @st: status of last amrhjkx executed
+ *
  * Return: 0 success or -1 if fail
  */
 int laspyrtas(__attribute__((unused))char **c, __attribute__((unused))int st)

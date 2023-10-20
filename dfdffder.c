@@ -1,7 +1,7 @@
 #include "header.h"
 
 /**
- * funtasn - Displays information on the shell by builtin amrhjkx 'env'
+ * funtasn - function that Displays information on the shell by builtin 'env'
  */
 void funtasn(void)
 {
@@ -11,7 +11,7 @@ void funtasn(void)
 }
 
 /**
- * funtasntasn - Displays information on the shell by builtin amrhjkx 'setenv'
+ * funtasntasn - func that Displays info on the shell by builtin 'setenv'
  */
 void funtasntasn(void)
 {
@@ -40,9 +40,11 @@ void newasntasn(void)
 }
 
 /**
- * hhitasGtas - display help for builtin amrhjkxs
+ * hhitasGtas - function that displays help for builtin amrhjkxs
+ *
  * @taadilTasn: parsed amrhjkx
  * @st: Status of last amrhjkx executed
+ *
  * Return: 0 Success
  */
 int hhitasGtas(char **taadilTasn, __attribute__((unused))int st)

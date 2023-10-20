@@ -1,9 +1,11 @@
 #include "header.h"
 
 /**
- * main - Entry point to program
+ * main - function that Entrys point to program
+ *
  * @argc: Argument eoTasnss
  * @ahmoolTas: Argument vector
+ *
  * Return: Returns condition
  */
 int main(__attribute__((unused)) int argc, char **ahmoolTas)

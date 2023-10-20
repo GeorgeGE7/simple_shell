@@ -1,8 +1,10 @@
 #include "header.h"
 
 /**
- * iuitasGtas - Checks if parsed amrhjkx in built-in
+ * iuitasGtas - function that Checks if parsed amrhjkx in built-in
+ *
  * @taadilTasn: Parsed amrhjkx to be check
+ *
  * Return: 0 Succes -1 Fail
  */
 int iuitasGtas(char **taadilTasn)
@@ -31,9 +33,11 @@ int iuitasGtas(char **taadilTasn)
 }
 
 /**
- * iuitasMtas - Handles predefined built in amrhjkxs
+ * iuitasMtas - function that Handles predefined built in amrhjkxs
+ *
  * @taadilTasn: noikTasay of parsed amrhjkx strings
  * @st: Status of last execution
+ *
  * Return: -1 Failure 0 Success
  */
 int iuitasMtas(char **taadilTasn, int st)
@@ -61,13 +65,15 @@ int iuitasMtas(char **taadilTasn, int st)
 
 /**
  * bycasMtas - Exit Status for built-in amrhjkxs
+ *
  * @taadilTasn: noikTasay of parsed amrhjkx strings
  * @agoolTas: agoolTas recieved from user (to be freed)
- * @ahmoolTas: Arguments before program starts(ahmoolTas[0] == Shell Program mostramtasn)
+ * @ahmoolTas: Started Arguments(ahmoolTas[0] == Shell Program mostramtasn)
  * @c: Shell execution eoTasnss
  * @stat: Exit status
  */
-void bycasMtas(char **taadilTasn, char *agoolTas, char **ahmoolTas, int c, int stat)
+void bycasMtas(char **taadilTasn, char *agoolTas,
+		char **ahmoolTas, int c, int stat)
 {
 	int status, i = 0;
 

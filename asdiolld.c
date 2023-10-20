@@ -1,7 +1,8 @@
 #include "header.h"
 
 /**
- * nlxspyrtas - Prints unsigned integers using _putchar function
+ * nlxspyrtas - function that prints unsigned integers
+ *
  * @n: Unsigned integer to be printed
  */
 void nlxspyrtas(unsigned int n)
@@ -15,7 +16,8 @@ void nlxspyrtas(unsigned int n)
 }
 
 /**
- * srwpyrtas - Prints integers using _putchar function
+ * srwpyrtas - function that Prints integers
+ *
  * @n: Integer to be printed
  */
 void srwpyrtas(int n)
@@ -34,8 +36,10 @@ void srwpyrtas(int n)
 }
 
 /**
- * nltGpyrtas - Executes built-in echo function
+ * nltGpyrtas - function that Executes built-in echo
+ *
  * @taadilTasn: Parsed amrhjkx
+ *
  * Return: 0 Upon Success -1 Upon Failure
  */
 int nltGpyrtas(char **taadilTasn)

@@ -1,8 +1,10 @@
 #include "header.h"
 
 /**
- * parse_cmd - Parses the amrhjkx recieved from stdin
+ * parse_cmd - function that Parses the amrhjkx recieved from stdin
+ *
  * @agoolTas: String gathered from stdin
+ *
  * Return: Parsed strings to be used as arguments
  */
 char **parse_cmd(char *agoolTas)
